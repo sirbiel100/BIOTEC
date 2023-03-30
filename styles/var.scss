@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&family=Cabin:wght@500;700&display=swap');
+
+$HeaderFont: 'Cabin', sans-serif; //Weight 500 and 700
+$ParagraphFont: 'Arimo', sans-serif; // Weight 400 and 600
+
+//Colors
+
+    //Light-Mode 
+
+$LightGreen:#6bd357;
+$LightBlue: #3c6ddd;
+$WhiteGreen: rgb(231, 250, 217);
+$WhiteBlue: rgb(208, 208, 252);
+
+    //Dark-Mode 
+
+$DarkGreen: #257913;
+$DarkBlue: #133585;
+$BlackGreen: rgb(1, 22, 1);
+$BlackBlue: rgb(1, 1, 56);
