@@ -5,11 +5,117 @@
 @import "laptops.scss";
 
 @media (min-width: 1200px) {
+
     html {
         scroll-behavior: smooth;
-        overflow-x: none;
+        overflow-x: hidden;
         overflow-y: scroll;
     }
+
+    body.light-mode {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(to top, $LightBlue, $LightGreen);
+        font-size: 18px;
+
+        //Header
+
+        header {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            background-color: rgba(255, 255, 255, 0.644);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.459);
+
+            &:hover {
+                transition: all .3s ease;
+                background-color: white;
+                border-bottom: 2px solid rgb(0, 0, 0);
+            }
+
+            .logo {
+                width: calc(100% - 70rem);
+                font-size: 55px;
+                font-family: $HeaderFont;
+                font-weight: 700;
+                background-image: linear-gradient(to right, $DarkBlue, $DarkGreen);
+                background-size: 50%;
+                background-clip: text;
+                color: transparent;
+                padding-left: 1rem;
+            }
+        }
+        
+    }
+
+    
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    .slider.round {
+        border-radius: 34px;
+    }
+    
+    .slider.round:before {
+        border-radius: 50%;
+    }
+}
+
+
 /*
     ::-webkit-scrollbar {
         width: 10px;
@@ -28,8 +134,3 @@
         background-color: rgba(24, 24, 153, 0.432);
     }
 */
-    body {
-        background-color: rgba(255, 0, 0, 0.288);
-        height: 400vh;
-    }
-}
