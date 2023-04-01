@@ -84,15 +84,18 @@ table {
     position: fixed;
     top: 0;
     left: 0;
+    padding: 1rem;
     width: 100%;
     height: auto;
     background-color: rgba(255, 255, 255, 0.644);
     border-bottom: 2px solid rgba(0, 0, 0, 0.459);
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.164), 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
   }
   body.light-mode header:hover {
     transition: all 0.3s ease;
     background-color: white;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(77, 77, 77);
+    box-shadow: 0px 0px 20px 5px rgba(77, 77, 77, 0.288), 0px 15px 10px 0px rgba(77, 77, 77, 0.288);
   }
   body.light-mode header .logo {
     width: calc(100% - 70rem);
@@ -105,6 +108,45 @@ table {
             background-clip: text;
     color: transparent;
     padding-left: 1rem;
+  }
+  body.light-mode header .logo h1 {
+    cursor: default;
+  }
+  body.light-mode header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: calc(100% - 30rem);
+    font-family: "Arimo", sans-serif;
+    font-weight: 400;
+  }
+  body.light-mode header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  body.light-mode header nav ul li:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  body.light-mode header nav ul li a {
+    color: #133585;
+    text-decoration: none;
+  }
+  body.light-mode header nav .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  body.light-mode header nav .buttons select {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-family: "Arimo", sans-serif;
+    font-weight: 600;
+    background-color: transparent;
   }
   .switch {
     position: relative;
