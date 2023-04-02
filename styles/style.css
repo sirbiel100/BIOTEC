@@ -69,6 +69,8 @@ table {
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: scroll;
+    height: 100vh;
+    width: 100vw;
   }
   body.light-mode {
     display: grid;
@@ -98,16 +100,18 @@ table {
     box-shadow: 0px 0px 20px 5px rgba(77, 77, 77, 0.288), 0px 15px 10px 0px rgba(77, 77, 77, 0.288);
   }
   body.light-mode header .logo {
-    width: calc(100% - 70rem);
+    width: auto;
     font-size: 55px;
     font-family: "Cabin", sans-serif;
     font-weight: 700;
     background-image: linear-gradient(to right, #133585, #257913);
-    background-size: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
     -webkit-background-clip: text;
             background-clip: text;
     color: transparent;
     padding-left: 1rem;
+    text-align: start;
   }
   body.light-mode header .logo h1 {
     cursor: default;
@@ -119,16 +123,22 @@ table {
     width: calc(100% - 30rem);
     font-family: "Arimo", sans-serif;
     font-weight: 400;
+    margin: auto;
   }
   body.light-mode header nav ul {
     display: flex;
-    justify-content: center;
+    width: 100%;
     gap: 2.5rem;
   }
   body.light-mode header nav ul li:hover {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
     transform: scale(1.1);
     opacity: 1;
+  }
+  body.light-mode header nav ul li:active {
+    transition-duration: 0s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(1px);
   }
   body.light-mode header nav ul li a {
     color: #133585;
@@ -138,6 +148,7 @@ table {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     gap: 2rem;
   }
   body.light-mode header nav .buttons select {
@@ -148,11 +159,34 @@ table {
     font-weight: 600;
     background-color: transparent;
   }
+  body.light-mode header nav .buttons select option {
+    font-family: "Arimo", sans-serif;
+    font-weight: 600;
+    background-image: url(/images/USAFlag.jpg);
+    background-origin: border-box;
+  }
   .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
+    margin-left: 3rem;
+    border: 0.5px solid rgba(77, 77, 77, 0.342);
+    border-radius: 20px;
+  }
+  .switch::before {
+    position: absolute;
+    content: "Claro";
+    right: 4.5rem;
+    top: 0.5rem;
+    font-size: 16px;
+  }
+  .switch::after {
+    position: absolute;
+    content: "Escuro";
+    left: 4.5rem;
+    top: 0.5rem;
+    font-size: 16px;
   }
   .switch input {
     opacity: 0;
@@ -166,7 +200,7 @@ table {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #6bd357;
     transition: 0.4s;
   }
   .slider:before {
@@ -180,7 +214,7 @@ table {
     transition: 0.4s;
   }
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #133585;
   }
   input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;

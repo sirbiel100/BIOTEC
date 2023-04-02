@@ -10,6 +10,8 @@
         scroll-behavior: smooth;
         overflow-x: hidden;
         overflow-y: scroll;
+        height: 100vh;
+        width: 100vw;
     }
 
     body.light-mode {
@@ -47,18 +49,19 @@
             }
 
             .logo {
-                width: calc(100% - 70rem);
+                width: auto;
                 font-size: 55px;
                 font-family: $HeaderFont;
                 font-weight: 700;
                 background-image: linear-gradient(to right, $DarkBlue, $DarkGreen);
-                background-size: 50%;
+                background-size: 100%;
+                background-repeat: no-repeat;
                 background-clip: text;
                 color: transparent;
                 padding-left: 1rem;
-                
+                text-align: start;
                 h1{
-                    cursor: default;
+                    cursor: default; 
                 }
             }
 
@@ -69,29 +72,41 @@
                 width: calc(100% - 30rem);
                 font-family: $ParagraphFont;
                 font-weight: 400;
+                margin: auto;
+                
 
                 ul {
                     display: flex;
-                    justify-content: center;
+                    width: 100%;
                     gap: 2.5rem;
+                    
+                    
                     li {
                         &:hover {
-                            transition: all .3s ease-in-out;
+                            transition: all .4s ease-in-out;
                             transform: scale(1.1);  
                             opacity: 1;
                         }
+                        &:active {
+                            transition-duration: 0s;
+                            transition-timing-function: ease-in-out;
+                            transform: translateY(1px);
+                            }
 
                         a{
                             color: $DarkBlue;
                             text-decoration: none;
                         }
+
                     }
+
                 }
 
                 .buttons {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    position: relative;
                     gap: 2rem;
 
                     select {
@@ -101,10 +116,16 @@
                         font-family: $ParagraphFont;
                         font-weight: 600;
                         background-color: transparent;
+
+                        option {
+                            font-family: $ParagraphFont;
+                            font-weight: 600;
+                            background-image: url(/images/USAFlag.jpg);
+                            background-origin: border-box;
+                        }
+                        
+                        
                     }
-                    
-                    
-                    
                 }
             }
         }
@@ -123,6 +144,25 @@
         display: inline-block;
         width: 60px;
         height: 34px;
+        margin-left: 3rem;
+        border: .5px solid rgba(77, 77, 77, 0.342);
+        border-radius: 20px;
+    }
+
+    .switch::before {
+        position: absolute;
+        content: 'Claro';
+        right: 4.5rem;
+        top: .5rem;
+        font-size: 16px;
+    }
+
+    .switch::after {
+        position: absolute;
+        content: 'Escuro';
+        left: 4.5rem;
+        top: .5rem;
+        font-size: 16px;
     }
 
     .switch input {
@@ -138,7 +178,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #ccc;
+        background-color: $LightGreen;
         -webkit-transition: .4s;
         transition: .4s;
     }
@@ -156,7 +196,7 @@
     }
 
     input:checked + .slider {
-        background-color: #2196F3;
+        background-color: $DarkBlue;
     }
 
     input:focus + .slider {
