@@ -1,7 +1,218 @@
+@import './var.scss';
+
 @media (min-width:768px) and (max-width: 991px) {
     
     body {
         background-color: blue;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    body.light-mode {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(to top, $LightBlue, $LightGreen);
+        font-size: 16px;
+
+        //Header
+
+        header {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 1rem;
+            width: 100%;
+            height: auto;
+            background-color: rgba(255, 255, 255, 0.644);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.459);
+            box-shadow: 
+            0px 0px 20px 5px rgba(0, 0, 0, 0.164),
+            0px 0px 10px 0px rgba(0, 0, 0, 0.164);
+
+            &:hover {
+                transition: all .3s ease;
+                background-color: white;
+                border-bottom: 2px solid rgb(77, 77, 77);
+                box-shadow: 
+                0px 0px 20px 5px rgba(77, 77, 77, 0.288),
+                0px 15px 10px 0px rgba(77, 77, 77,  0.288);
+            }
+
+            .logo {
+                width: auto;
+                font-size: 38px;
+                font-family: $HeaderFont;
+                font-weight: 700;
+                background-image: linear-gradient(to right, $DarkBlue, $DarkGreen);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-clip: text;
+                color: transparent;
+                padding-left: 1rem;
+                text-align: start;
+                h1{
+                    cursor: default; 
+                }
+            }
+
+            nav {
+                position: fixed;
+                right: 0;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 30vw;
+                height: 100vh;
+                background-color: $WhiteGreen;
+                font-family: $ParagraphFont;
+                font-weight: 600;
+                
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+                    gap: 2.5rem;
+                    padding-left: .5rem;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        width: 80%;
+                        padding-left: 1rem;
+                        height: 30px;
+                        
+
+                        &:active {
+                            transition-duration: 0s;
+                            transition-timing-function: linear;
+                            transform: translateY(1px);
+                            }
+
+                        a{
+                            color: $DarkBlue;
+                            text-decoration: none;
+                        }
+                    }
+
+                }
+
+                .buttons {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 3rem;
+                    gap: 2rem;
+
+                    select {
+                        cursor: pointer;
+                        padding: .5rem;
+                        border-radius: 4px;
+                        font-family: $ParagraphFont;
+                        font-weight: 600;
+                        background-color: transparent;
+
+                        option {
+                            font-family: $ParagraphFont;
+                            font-weight: 600;
+                            background-image: url(/images/USAFlag.jpg);
+                            background-origin: border-box;
+                        } 
+                    }
+                    .switch {
+                        position: relative;
+                        display: inline-block;
+                        width: 50px;
+                        height: 24px;
+                        border: .5px solid rgba(77, 77, 77, 0.342);
+                        border-radius: 20px;
+                    }
+                
+                    .switch::before {
+                        position: absolute;
+                        content: 'Claro';
+                        right: 3.8rem;
+                        top: .4rem;
+                        font-size: 14px;
+                    }
+                
+                    .switch::after {
+                        position: absolute;
+                        content: 'Escuro';
+                        left: 3.8rem;
+                        top: .4rem;
+                        font-size: 14px;
+                    }
+                
+                    .switch input {
+                        opacity: 0;
+                        width: 0;
+                        height: 0;
+                    }
+                
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: $LightGreen;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+                
+                    .slider:before {
+                        position: absolute;
+                        content: "";
+                        height: 18px;
+                        width: 18px;
+                        left: 3px;
+                        bottom: 3px;
+                        background-color: white;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+                
+                    input:checked + .slider {
+                        background-color: $DarkBlue;
+                    }
+                
+                    input:focus + .slider {
+                        box-shadow: 0 0 1px #2196F3;
+                    }
+                
+                    input:checked + .slider:before {
+                        -webkit-transform: translateX(26px);
+                        -ms-transform: translateX(26px);
+                        transform: translateX(26px);
+                        border: .2px solid $LightGreen;
+                    }
+                
+                    .slider.round {
+                        border-radius: 34px;
+                    }
+                    
+                    .slider.round:before {
+                        border-radius: 50%;
+                        border: .2px solid $DarkBlue;
+                    }
+                }
+            }
+        }
+        .hamburguer {display: none;}
     }
     
 }
