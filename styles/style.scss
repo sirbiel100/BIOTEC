@@ -1,8 +1,7 @@
 @import "var.scss";
 @import "reset.scss";
-@import "phone.scss";
-@import "tablets.scss";
-@import "laptops.scss";
+
+
 
 @media (min-width: 1200px) {
 
@@ -10,16 +9,17 @@
         scroll-behavior: smooth;
         overflow-x: hidden;
         overflow-y: scroll;
-        height: 100vh;
+        height: 400vh;
         width: 100vw;
     }
 
     body.light-mode {
         display: grid;
         place-items: center;
-        height: 100vh;
+        height: 400vh;
         width: 100vw;
         background-image: linear-gradient(to top, $LightBlue, $LightGreen);
+        background-repeat: no-repeat;
         font-size: 18px;
 
         //Header
@@ -111,6 +111,20 @@
                     position: relative;
                     gap: 2rem;
 
+                    .images {
+                        display: flex;
+                        align-items: center;
+                        position: absolute;
+                        bottom: 2.5rem;
+                        right: 10.3rem;
+                        gap: .2rem;
+
+                        img {
+                            width: 20px;
+                            height: 15px;
+                        }
+                    }
+
                     select {
                         cursor: pointer;
                         padding: .5rem;
@@ -138,7 +152,7 @@
                 
                     .switch::before {
                         position: absolute;
-                        content: 'Claro';
+                        content: 'AM';
                         right: 4.5rem;
                         top: .5rem;
                         font-size: 16px;
@@ -146,7 +160,7 @@
                 
                     .switch::after {
                         position: absolute;
-                        content: 'Escuro';
+                        content: 'PM';
                         left: 4.5rem;
                         top: .5rem;
                         font-size: 16px;
@@ -211,26 +225,25 @@
         }
         
     }
-
+    
+    
+        ::-webkit-scrollbar {
+            width: 10px;
+            
+        }
+    
+        ::-webkit-scrollbar-track {
+            background-color: rgba(18, 155, 18, 0.397);
+        }
+    
+        ::-webkit-scrollbar-track:hover {
+            background-color: rgb(255, 0, 0);
+        }
+    
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(24, 24, 153, 0.432);
+        } 
+    
 
 }
 
-
-/*
-    ::-webkit-scrollbar {
-        width: 10px;
-        
-    }
-
-    ::-webkit-scrollbar-track {
-        background-color: rgba(18, 155, 18, 0.397);
-    }
-
-    ::-webkit-scrollbar-track:hover {
-        background-color: rgb(255, 0, 0);
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background-color: rgba(24, 24, 153, 0.432);
-    }
-*/
