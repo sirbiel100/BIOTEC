@@ -243,22 +243,7 @@
                 display: none;
             }
             
-            .menu-button {
-                position: absolute;
-                background-color: red;
-                height: 50px;
-                width: 50px;
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-
-                span {
-                    
-                    background-color: blue;
-                    width: 20px;
-                    height: 5px;
-                }
-            }
+            
             
             #menu-toggle:checked + .menu-button-container .menu-button::before {
                 margin-top: 0px;
@@ -277,7 +262,24 @@
                 display: flex;
             }
 
+            .menu-button {
+                position: absolute;
+                background-color: red;
+                height: 25px;
+                width: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: .3rem;
 
+                span {
+                    
+                    background-color: blue;
+                    width: 30px;
+                    height: 2px;
+                }
+            }
             
         }
         
