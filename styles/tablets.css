@@ -54,6 +54,7 @@
     justify-content: center;
     width: 30vw;
     height: 100vh;
+    padding-top: 3rem;
     background-color: rgb(231, 250, 217);
     font-family: "Arimo", sans-serif;
     font-weight: 600;
@@ -182,41 +183,50 @@
     border-radius: 50%;
     border: 0.2px solid #133585;
   }
-  body.light-mode header .hamburguer {
-    display: flex;
-    position: absolute;
-    right: 5rem;
-    height: 40px;
-    width: 40px;
-    align-items: center;
-    justify-content: center;
+  body.light-mode header nav.navbar-toggle {
+    transform: scale(1);
+    opacity: 1;
   }
-  body.light-mode header .hamburguer input {
-    cursor: pointer;
+  body.light-mode header .menu-button-container {
+    display: block;
     height: 100%;
-    width: 100%;
-    opacity: 1;
-  }
-  body.light-mode header .hamburguer span {
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    width: 25px;
-    height: 1.5px;
-    background-color: white;
-    pointer-events: none;
+    right: 4rem;
   }
-  body.light-mode header .hamburguer span.one {
-    top: 0.7rem;
-    background-color: #133585;
+  body.light-mode header #menu-toggle {
+    display: none;
   }
-  body.light-mode header .hamburguer span.two {
-    background-color: #133585;
-  }
-  body.light-mode header .hamburguer span.three {
-    bottom: 0.7rem;
-    background-color: #133585;
-  }
-  body.light-mode header .hamburguer #a:focus, body.light-mode header .hamburguer span.two {
-    opacity: 1;
+  body.light-mode header .menu-button {
+    position: absolute;
     background-color: red;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  body.light-mode header .menu-button span {
+    background-color: blue;
+    width: 20px;
+    height: 5px;
+  }
+  body.light-mode header #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  body.light-mode header #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  body.light-mode header #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  body.light-mode header .menu-button-container {
+    display: flex;
   }
 }/*# sourceMappingURL=tablets.css.map */

@@ -29,3 +29,13 @@ LanguageButton.addEventListener('change', event => {
     const newLanguage = event.target.value;
     updateLanguage(newLanguage);
 })
+
+// Menu Hamburguer 
+
+const bttn = document.querySelector('#open-menu')
+const navbar = document.querySelector('#nav')
+
+bttn.addEventListener('click', () => {
+    navbar.classList.toggle('navbar-toggle')
+    console.log('On')
+})

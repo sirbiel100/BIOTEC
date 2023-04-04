@@ -64,6 +64,7 @@
                 justify-content: center;
                 width: 30vw;
                 height: 100vh;
+                padding-top: 3rem;
                 background-color: $WhiteGreen;
                 font-family: $ParagraphFont;
                 font-weight: 600;
@@ -220,48 +221,64 @@
                 }
             }
 
+            nav.navbar-toggle {
+                transform: scale(1);
+                opacity: 1;
+            }
             //Hamburguer Menu
 
-            .hamburguer {
-                display: flex;
-                position: absolute;
-                right: 5rem;
-                height: 40px;
-                width: 40px;
-                align-items: center;
+            .menu-button-container {
+                display: block;
+                height: 100%;
+                width: 30px;
+                cursor: pointer;
+                flex-direction: column;
                 justify-content: center;
-                input {
-                    cursor: pointer;
-                    height: 100%;
-                    width: 100%;
-                    opacity: 1;
-                }
+                align-items: center;
+                position: absolute;
+                right: 4rem;
+            }
+            
+            #menu-toggle {
+                display: none;
+            }
+            
+            .menu-button {
+                position: absolute;
+                background-color: red;
+                height: 50px;
+                width: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
                 span {
-                    position: absolute;
-                    width: 25px;
-                    height: 1.5px;
-                    background-color: white;
-                    pointer-events: none;
-                }
-                span.one {
-                    top: .7rem;
-                    background-color: $DarkBlue;
-                }
-
-                span.two {
-                    background-color: $DarkBlue;
-                }
-
-                span.three {
-                    bottom: .7rem;
-                    background-color: $DarkBlue;
-                }
-
-                #a:focus,  span.two {
-                    opacity: 1;
-                    background-color: red;
+                    
+                    background-color: blue;
+                    width: 20px;
+                    height: 5px;
                 }
             }
+            
+            #menu-toggle:checked + .menu-button-container .menu-button::before {
+                margin-top: 0px;
+                transform: rotate(405deg);
+            }
+            
+            #menu-toggle:checked + .menu-button-container .menu-button {
+                background: rgba(255, 255, 255, 0);
+            }
+            
+            #menu-toggle:checked + .menu-button-container .menu-button::after {
+                margin-top: 0px;
+                transform: rotate(-405deg);
+            }
+            .menu-button-container {
+                display: flex;
+            }
+
+
+            
         }
         
     }
