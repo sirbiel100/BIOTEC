@@ -1,8 +1,293 @@
+@import './var.scss';
+
 @media (max-width: 767px) {
     
-    body {
-        background-color: black;
-    }
     
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    body.light-mode {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(to top, $LightBlue, $LightGreen);
+        font-size: 14px;
+
+        //Header
+
+        header {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 1rem;
+            width: 100%;
+            height: auto;
+            background-color: rgba(255, 255, 255, 0.644);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.459);
+            box-shadow: 
+            0px 0px 20px 5px rgba(0, 0, 0, 0.164),
+            0px 0px 10px 0px rgba(0, 0, 0, 0.164);
+
+
+            .logo {
+                width: auto;
+                font-size: 34px;
+                font-family: $HeaderFont;
+                font-weight: 700;
+                background-image: linear-gradient(to right, $DarkBlue, $DarkGreen);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-clip: text;
+                color: transparent;
+                padding-left: 1rem;
+                text-align: start;
+                h1{
+                    cursor: default; 
+                }
+            }
+
+            nav {
+                position: fixed;
+                right: 0;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 50vw;
+                height: 100vh;
+                padding-top: 3rem;
+                background-color: $WhiteGreen;
+                font-family: $ParagraphFont;
+                font-weight: 600;
+                border-left: .5px solid $DarkGreen;
+                box-shadow: 
+                -5px 0px 30px 5px rgba(22, 209, 28, 0.322),
+                -20px 0px 30px 1000px rgba(0, 0, 0, 0.568);
+                transform: scale(0);
+                opacity: 0;
+                transform-origin: top right;
+                transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+                
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+                    gap: 2.5rem;
+                    padding-left: .5rem;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        width: 80%;
+                        padding-left: 1rem;
+                        height: 30px;
+                        
+
+                        &:active {
+                            transition-duration: 0s;
+                            transition-timing-function: linear;
+                            transform: translateY(1px);
+                            }
+
+                        a{
+                            color: $DarkBlue;
+                            text-decoration: none;
+                        }
+                    }
+
+                }
+
+                .buttons {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    justify-content: space-around;
+                    height: 15rem;
+                    margin-top: 2rem;
+                    
+
+                    .images {
+                        position: absolute;
+                        bottom: 5rem;
+                        img {
+                            width: 20px;
+                            height: 15px;
+                        }
+                    }
+
+                    select {
+                        cursor: pointer;
+                        padding: .3rem;
+                        border-radius: 4px;
+                        font-family: $ParagraphFont;
+                        font-weight: 600;
+                        background-color: transparent;
+
+                        option {
+                            font-family: $ParagraphFont;
+                            font-weight: 600;
+                            background-image: url(/images/USAFlag.jpg);
+                            background-origin: border-box;
+                        } 
+                    }
+                    .switch {
+                        position: relative;
+                        display: inline-block;
+                        width: 60px;
+                        height: 34px;
+                        border: .5px solid rgba(77, 77, 77, 0.342);
+                        border-radius: 20px;
+                    }
+                
+                    .switch::before {
+                        position: absolute;
+                        content: 'AM';
+                        right: 4.5rem;
+                        top: .55rem;
+                        font-size: 14px;
+                    }
+                
+                    .switch::after {
+                        position: absolute;
+                        content: 'PM';
+                        left: 4.5rem;
+                        top: .55rem;
+                        font-size: 14px;
+                    }
+                
+                    .switch input {
+                        opacity: 0;
+                        width: 0;
+                        height: 0;
+                    }
+                
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: $LightGreen;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+                
+                    .slider:before {
+                        position: absolute;
+                        content: "";
+                        height: 26px;
+                        width: 26px;
+                        left: 3px;
+                        bottom: 3px;
+                        background-color: white;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+                
+                    input:checked + .slider {
+                        background-color: $DarkBlue;
+                    }
+                
+                    input:focus + .slider {
+                        box-shadow: 0 0 1px #2196F3;
+                    }
+                
+                    input:checked + .slider:before {
+                        -webkit-transform: translateX(26px);
+                        -ms-transform: translateX(26px);
+                        transform: translateX(26px);
+                        border: .2px solid $LightGreen;
+                    }
+                
+                    .slider.round {
+                        border-radius: 34px;
+                    }
+                    
+                    .slider.round:before {
+                        border-radius: 50%;
+                        border: .2px solid $DarkBlue;
+                    }
+                }
+            }
+
+            nav.navbar-toggle {
+                transform: scale(1);
+                opacity: 1;
+            }
+            //Hamburguer Menu
+
+            .menu-button-container {
+                display: flex;
+                height: 25px;
+                width: 30px;
+                cursor: pointer;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                right: 4rem;
+
+            }
+            
+            #menu-toggle {
+                display: none;
+            }
+
+            #menu-toggle:checked + .menu-button-container span.three {
+                transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
+                margin-top: 0px;
+                transform: rotate(405deg)
+                translateY(-1px)
+                translateX(-3.5px)
+            }
+            
+            #menu-toggle:checked + .menu-button-container span.two {
+                background: rgba(255, 255, 255, 0);
+            }
+            
+            #menu-toggle:checked + .menu-button-container span.one {
+                transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
+                margin-top: 0px;
+                transform: rotate(-405deg)
+                translateY(7px)
+                translateX(-8px);
+            }
+            
+            .menu-button {
+                position: absolute;
+                height: 19.5px;
+                width: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: .3rem;
+                span {
+                    background-color: $DarkBlue;
+                    width: 30px;
+                    height: 2px;
+                }
+                .one {
+                    transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+                    
+                }
+                .three {
+                    transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+            }
+            
+        }
+        
+    }
 }
 

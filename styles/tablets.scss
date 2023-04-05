@@ -228,8 +228,8 @@
             //Hamburguer Menu
 
             .menu-button-container {
-                display: block;
-                height: 19.5px;
+                display: flex;
+                height: 25px;
                 width: 30px;
                 cursor: pointer;
                 flex-direction: column;
@@ -237,7 +237,7 @@
                 align-items: center;
                 position: absolute;
                 right: 4rem;
-                
+
             }
             
             #menu-toggle {
@@ -248,8 +248,8 @@
                 transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
                 margin-top: 0px;
                 transform: rotate(405deg)
-                translateY(-9.2px)
-                translateX(-8px)
+                translateY(-1px)
+                translateX(-3.5px)
             }
             
             #menu-toggle:checked + .menu-button-container span.two {
@@ -259,10 +259,9 @@
             #menu-toggle:checked + .menu-button-container span.one {
                 transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
                 margin-top: 0px;
-                transform: rotate(-405deg);
-            }
-            .menu-button-container {
-                display: flex;
+                transform: rotate(-405deg)
+                translateY(7px)
+                translateX(-8px);
             }
             
             .menu-button {

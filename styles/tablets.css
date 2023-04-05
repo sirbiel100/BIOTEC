@@ -188,8 +188,8 @@
     opacity: 1;
   }
   body.light-mode header .menu-button-container {
-    display: block;
-    height: 19.5px;
+    display: flex;
+    height: 25px;
     width: 30px;
     cursor: pointer;
     flex-direction: column;
@@ -204,7 +204,7 @@
   body.light-mode header #menu-toggle:checked + .menu-button-container span.three {
     transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
     margin-top: 0px;
-    transform: rotate(405deg) translateY(-9.2px) translateX(-8px);
+    transform: rotate(405deg) translateY(-1px) translateX(-3.5px);
   }
   body.light-mode header #menu-toggle:checked + .menu-button-container span.two {
     background: rgba(255, 255, 255, 0);
@@ -212,10 +212,7 @@
   body.light-mode header #menu-toggle:checked + .menu-button-container span.one {
     transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
     margin-top: 0px;
-    transform: rotate(-405deg);
-  }
-  body.light-mode header .menu-button-container {
-    display: flex;
+    transform: rotate(-405deg) translateY(7px) translateX(-8px);
   }
   body.light-mode header .menu-button {
     position: absolute;
