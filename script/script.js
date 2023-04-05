@@ -37,5 +37,4 @@ const navbar = document.querySelector('#nav')
 
 bttn.addEventListener('click', () => {
     navbar.classList.toggle('navbar-toggle')
-    console.log('On')
 })
