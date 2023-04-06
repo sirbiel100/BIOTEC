@@ -9,14 +9,14 @@
         scroll-behavior: smooth;
         overflow-x: hidden;
         overflow-y: scroll;
-        height: 400vh;
+        height: auto;
         width: 100vw;
     }
 
     body.light-mode {
         display: grid;
         place-items: center;
-        height: 400vh;
+        height: auto;
         width: 100vw;
         background-image: linear-gradient(to top, $LightBlue, $LightGreen);
         background-repeat: no-repeat;
@@ -223,8 +223,65 @@
             .hamburguer {display: none;}
         }
         
+        //Logo and Company
+
+        .company {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-top: 8rem;
+
+            .logo-image {
+                width: 50%;
+                background-color: red;
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            .logo-name {
+                display: flex;
+                justify-content: center;
+                width: 50%;
+                background-image: linear-gradient(to right, $DarkBlue, $DarkGreen);
+                background-clip: text;
+                
+                span {
+                    font-family: $HeaderFont;
+                    font-weight: 500;
+                    letter-spacing: 5px;
+                    font-size: 150px;
+                    color: transparent;
+                    
+                }
+            }
+        }
     }
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
         ::-webkit-scrollbar {
             width: 10px;
