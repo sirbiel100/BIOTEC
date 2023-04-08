@@ -90,7 +90,7 @@ table {
     font-size: 55px;
     font-family: "Cabin", sans-serif;
     font-weight: 700;
-    background-image: linear-gradient(to right, #133585, #257913);
+    background-image: linear-gradient(to top, #133585, #257913);
     background-size: 100%;
     background-repeat: no-repeat;
     -webkit-background-clip: text;
@@ -237,29 +237,37 @@ table {
     width: 100%;
     height: auto;
     margin-top: 8rem;
+    padding: 1rem;
   }
   body.light-mode .company .logo-image {
     width: 50%;
-    background-color: red;
+    padding: 1rem;
   }
   body.light-mode .company .logo-image img {
     width: 100%;
+    opacity: 0.2;
     display: block;
   }
   body.light-mode .company .logo-name {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 3rem;
     width: 50%;
-    background-image: linear-gradient(to right, #133585, #257913);
-    -webkit-background-clip: text;
-            background-clip: text;
+    cursor: default;
+    color: rgb(24, 31, 46);
+    font-family: "Cabin", sans-serif;
   }
   body.light-mode .company .logo-name span {
-    font-family: "Cabin", sans-serif;
     font-weight: 500;
     letter-spacing: 5px;
-    font-size: 150px;
-    color: transparent;
+    font-size: 120px;
+  }
+  body.light-mode .company .logo-name .sub-titulo {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 60px;
   }
   ::-webkit-scrollbar {
     width: 10px;

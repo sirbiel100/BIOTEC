@@ -39,7 +39,7 @@
     font-size: 45px;
     font-family: "Cabin", sans-serif;
     font-weight: 700;
-    background-image: linear-gradient(to right, #133585, #257913);
+    background-image: linear-gradient(to top, #133585, #257913);
     background-size: 100%;
     background-repeat: no-repeat;
     -webkit-background-clip: text;
@@ -175,5 +175,43 @@
   body.light-mode header nav .buttons .slider.round:before {
     border-radius: 50%;
     border: 0.2px solid #133585;
+  }
+  .company {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 8rem;
+    padding: 1rem;
+  }
+  .company .logo-image {
+    width: 50%;
+    padding: 1rem;
+  }
+  .company .logo-image img {
+    width: 100%;
+    opacity: 0.2;
+    display: block;
+  }
+  .company .logo-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 50%;
+    cursor: default;
+    color: rgb(24, 31, 46);
+    font-family: "Cabin", sans-serif;
+  }
+  .company .logo-name span {
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 100px;
+  }
+  .company .logo-name .sub-titulo {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 40px;
   }
 }/*# sourceMappingURL=laptops.css.map */
