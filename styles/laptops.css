@@ -15,7 +15,7 @@
     background-image: linear-gradient(to top, #3c6ddd, #6bd357);
     font-size: 14px;
   }
-  body.light-mode header {
+  body.light-mode .fixed-bar {
     display: flex;
     align-items: center;
     position: fixed;
@@ -28,13 +28,13 @@
     border-bottom: 2px solid rgba(0, 0, 0, 0.459);
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.164), 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
   }
-  body.light-mode header:hover {
+  body.light-mode .fixed-bar:hover {
     transition: all 0.3s ease;
     background-color: white;
     border-bottom: 2px solid rgb(77, 77, 77);
     box-shadow: 0px 0px 20px 5px rgba(77, 77, 77, 0.288), 0px 15px 10px 0px rgba(77, 77, 77, 0.288);
   }
-  body.light-mode header .logo {
+  body.light-mode .fixed-bar .logo {
     width: auto;
     font-size: 45px;
     font-family: "Cabin", sans-serif;
@@ -48,10 +48,10 @@
     padding-left: 1rem;
     text-align: start;
   }
-  body.light-mode header .logo h1 {
+  body.light-mode .fixed-bar .logo h1 {
     cursor: default;
   }
-  body.light-mode header nav {
+  body.light-mode .fixed-bar nav {
     display: flex;
     align-items: center;
     width: calc(100% - 20rem);
@@ -59,33 +59,33 @@
     font-weight: 400;
     margin: auto;
   }
-  body.light-mode header nav ul {
+  body.light-mode .fixed-bar nav ul {
     display: flex;
     align-items: center;
     width: 100%;
     gap: 2rem;
   }
-  body.light-mode header nav ul li:hover {
+  body.light-mode .fixed-bar nav ul li:hover {
     transition: all 0.4s ease-in-out;
     transform: scale(1.1);
   }
-  body.light-mode header nav ul li:active {
+  body.light-mode .fixed-bar nav ul li:active {
     transition-duration: 0s;
     transition-timing-function: linear;
     transform: translateY(1px);
   }
-  body.light-mode header nav ul li a {
+  body.light-mode .fixed-bar nav ul li a {
     color: #133585;
     text-decoration: none;
   }
-  body.light-mode header nav .buttons {
+  body.light-mode .fixed-bar nav .buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     gap: 2rem;
   }
-  body.light-mode header nav .buttons .images {
+  body.light-mode .fixed-bar nav .buttons .images {
     display: flex;
     align-items: center;
     position: absolute;
@@ -93,11 +93,11 @@
     right: 8.5rem;
     gap: 0.2rem;
   }
-  body.light-mode header nav .buttons .images img {
+  body.light-mode .fixed-bar nav .buttons .images img {
     width: 20px;
     height: 15px;
   }
-  body.light-mode header nav .buttons select {
+  body.light-mode .fixed-bar nav .buttons select {
     cursor: pointer;
     padding: 0.3rem;
     border-radius: 4px;
@@ -105,13 +105,13 @@
     font-weight: 600;
     background-color: transparent;
   }
-  body.light-mode header nav .buttons select option {
+  body.light-mode .fixed-bar nav .buttons select option {
     font-family: "Arimo", sans-serif;
     font-weight: 600;
     background-image: url(/images/USAFlag.jpg);
     background-origin: border-box;
   }
-  body.light-mode header nav .buttons .switch {
+  body.light-mode .fixed-bar nav .buttons .switch {
     position: relative;
     display: inline-block;
     width: 50px;
@@ -120,26 +120,26 @@
     border: 0.5px solid rgba(77, 77, 77, 0.342);
     border-radius: 20px;
   }
-  body.light-mode header nav .buttons .switch::before {
+  body.light-mode .fixed-bar nav .buttons .switch::before {
     position: absolute;
     content: "AM";
     right: 3.8rem;
     top: 0.4rem;
     font-size: 14px;
   }
-  body.light-mode header nav .buttons .switch::after {
+  body.light-mode .fixed-bar nav .buttons .switch::after {
     position: absolute;
     content: "PM";
     left: 3.8rem;
     top: 0.4rem;
     font-size: 14px;
   }
-  body.light-mode header nav .buttons .switch input {
+  body.light-mode .fixed-bar nav .buttons .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  body.light-mode header nav .buttons .slider {
+  body.light-mode .fixed-bar nav .buttons .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -149,7 +149,7 @@
     background-color: #6bd357;
     transition: 0.4s;
   }
-  body.light-mode header nav .buttons .slider:before {
+  body.light-mode .fixed-bar nav .buttons .slider:before {
     position: absolute;
     content: "";
     height: 18px;
@@ -159,20 +159,20 @@
     background-color: white;
     transition: 0.4s;
   }
-  body.light-mode header nav .buttons input:checked + .slider {
+  body.light-mode .fixed-bar nav .buttons input:checked + .slider {
     background-color: #133585;
   }
-  body.light-mode header nav .buttons input:focus + .slider {
+  body.light-mode .fixed-bar nav .buttons input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
   }
-  body.light-mode header nav .buttons input:checked + .slider:before {
+  body.light-mode .fixed-bar nav .buttons input:checked + .slider:before {
     transform: translateX(26px);
     border: 0.2px solid #6bd357;
   }
-  body.light-mode header nav .buttons .slider.round {
+  body.light-mode .fixed-bar nav .buttons .slider.round {
     border-radius: 34px;
   }
-  body.light-mode header nav .buttons .slider.round:before {
+  body.light-mode .fixed-bar nav .buttons .slider.round:before {
     border-radius: 50%;
     border: 0.2px solid #133585;
   }

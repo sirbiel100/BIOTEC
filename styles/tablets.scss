@@ -22,7 +22,7 @@
 
         //Header
 
-        header {
+        .fixed-bar {
             display: flex;
             align-items: center;
             position: fixed;
@@ -301,7 +301,7 @@
 
         .logo-image {
             width: 50%;
-            padding: 1rem;
+            padding-left: 2rem;
 
             img {
                 width: 100%;
@@ -316,21 +316,22 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 3rem;
+            gap: 1.5rem;
             width: 50%;
             cursor: default;
             color: rgb(24, 31, 46);
             font-family: $HeaderFont;
+            padding-right: 2rem;
             
             span {
                 font-weight: 500;
-                letter-spacing: 3px;
-                font-size: 90px; 
+                letter-spacing: 2px;
+                font-size: 70px; 
             }
 
             .sub-titulo {
                 display: flex;
-                gap: 1rem;
+                gap: .8rem;
                 font-size: 30px;
             }
         }

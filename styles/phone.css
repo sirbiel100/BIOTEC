@@ -15,7 +15,7 @@
     background-image: linear-gradient(to top, #3c6ddd, #6bd357);
     font-size: 14px;
   }
-  body.light-mode header {
+  body.light-mode .fixed-bar {
     display: flex;
     align-items: center;
     position: fixed;
@@ -29,7 +29,7 @@
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.164), 0px 0px 10px 0px rgba(0, 0, 0, 0.164);
     z-index: 10;
   }
-  body.light-mode header .logo {
+  body.light-mode .fixed-bar .logo {
     width: auto;
     font-size: 34px;
     font-family: "Cabin", sans-serif;
@@ -42,10 +42,10 @@
     color: transparent;
     padding-left: 1rem;
   }
-  body.light-mode header .logo h1 {
+  body.light-mode .fixed-bar .logo h1 {
     cursor: default;
   }
-  body.light-mode header nav {
+  body.light-mode .fixed-bar nav {
     position: fixed;
     right: 0;
     top: 0;
@@ -65,7 +65,7 @@
     transform-origin: top right;
     transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-  body.light-mode header nav ul {
+  body.light-mode .fixed-bar nav ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -73,23 +73,23 @@
     gap: 2.5rem;
     padding-left: 0.5rem;
   }
-  body.light-mode header nav ul li {
+  body.light-mode .fixed-bar nav ul li {
     display: flex;
     align-items: center;
     width: 80%;
     padding-left: 1rem;
     height: 30px;
   }
-  body.light-mode header nav ul li:active {
+  body.light-mode .fixed-bar nav ul li:active {
     transition-duration: 0s;
     transition-timing-function: linear;
     transform: translateY(1px);
   }
-  body.light-mode header nav ul li a {
+  body.light-mode .fixed-bar nav ul li a {
     color: #133585;
     text-decoration: none;
   }
-  body.light-mode header nav .buttons {
+  body.light-mode .fixed-bar nav .buttons {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -97,15 +97,15 @@
     height: 15rem;
     margin-top: 2rem;
   }
-  body.light-mode header nav .buttons .images {
+  body.light-mode .fixed-bar nav .buttons .images {
     position: absolute;
     bottom: 5rem;
   }
-  body.light-mode header nav .buttons .images img {
+  body.light-mode .fixed-bar nav .buttons .images img {
     width: 20px;
     height: 15px;
   }
-  body.light-mode header nav .buttons select {
+  body.light-mode .fixed-bar nav .buttons select {
     cursor: pointer;
     padding: 0.3rem;
     border-radius: 4px;
@@ -113,13 +113,13 @@
     font-weight: 600;
     background-color: transparent;
   }
-  body.light-mode header nav .buttons select option {
+  body.light-mode .fixed-bar nav .buttons select option {
     font-family: "Arimo", sans-serif;
     font-weight: 600;
     background-image: url(/images/USAFlag.jpg);
     background-origin: border-box;
   }
-  body.light-mode header nav .buttons .switch {
+  body.light-mode .fixed-bar nav .buttons .switch {
     position: relative;
     display: inline-block;
     width: 60px;
@@ -127,26 +127,26 @@
     border: 0.5px solid rgba(77, 77, 77, 0.342);
     border-radius: 20px;
   }
-  body.light-mode header nav .buttons .switch::before {
+  body.light-mode .fixed-bar nav .buttons .switch::before {
     position: absolute;
     content: "AM";
     right: 4.5rem;
     top: 0.55rem;
     font-size: 14px;
   }
-  body.light-mode header nav .buttons .switch::after {
+  body.light-mode .fixed-bar nav .buttons .switch::after {
     position: absolute;
     content: "PM";
     left: 4.5rem;
     top: 0.55rem;
     font-size: 14px;
   }
-  body.light-mode header nav .buttons .switch input {
+  body.light-mode .fixed-bar nav .buttons .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  body.light-mode header nav .buttons .slider {
+  body.light-mode .fixed-bar nav .buttons .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -156,7 +156,7 @@
     background-color: #6bd357;
     transition: 0.4s;
   }
-  body.light-mode header nav .buttons .slider:before {
+  body.light-mode .fixed-bar nav .buttons .slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -166,28 +166,28 @@
     background-color: white;
     transition: 0.4s;
   }
-  body.light-mode header nav .buttons input:checked + .slider {
+  body.light-mode .fixed-bar nav .buttons input:checked + .slider {
     background-color: #133585;
   }
-  body.light-mode header nav .buttons input:focus + .slider {
+  body.light-mode .fixed-bar nav .buttons input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
   }
-  body.light-mode header nav .buttons input:checked + .slider:before {
+  body.light-mode .fixed-bar nav .buttons input:checked + .slider:before {
     transform: translateX(26px);
     border: 0.2px solid #6bd357;
   }
-  body.light-mode header nav .buttons .slider.round {
+  body.light-mode .fixed-bar nav .buttons .slider.round {
     border-radius: 34px;
   }
-  body.light-mode header nav .buttons .slider.round:before {
+  body.light-mode .fixed-bar nav .buttons .slider.round:before {
     border-radius: 50%;
     border: 0.2px solid #133585;
   }
-  body.light-mode header nav.navbar-toggle {
+  body.light-mode .fixed-bar nav.navbar-toggle {
     transform: scale(1);
     opacity: 1;
   }
-  body.light-mode header .menu-button-container {
+  body.light-mode .fixed-bar .menu-button-container {
     display: flex;
     height: 25px;
     width: 30px;
@@ -198,23 +198,23 @@
     position: absolute;
     right: 4rem;
   }
-  body.light-mode header #menu-toggle {
+  body.light-mode .fixed-bar #menu-toggle {
     display: none;
   }
-  body.light-mode header #menu-toggle:checked + .menu-button-container span.three {
+  body.light-mode .fixed-bar #menu-toggle:checked + .menu-button-container span.three {
     transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
     margin-top: 0px;
     transform: rotate(405deg) translateY(-1px) translateX(-3.5px);
   }
-  body.light-mode header #menu-toggle:checked + .menu-button-container span.two {
+  body.light-mode .fixed-bar #menu-toggle:checked + .menu-button-container span.two {
     background: rgba(255, 255, 255, 0);
   }
-  body.light-mode header #menu-toggle:checked + .menu-button-container span.one {
+  body.light-mode .fixed-bar #menu-toggle:checked + .menu-button-container span.one {
     transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
     margin-top: 0px;
     transform: rotate(-405deg) translateY(7px) translateX(-8px);
   }
-  body.light-mode header .menu-button {
+  body.light-mode .fixed-bar .menu-button {
     position: absolute;
     height: 19.5px;
     width: 30px;
@@ -224,15 +224,15 @@
     flex-direction: column;
     gap: 0.3rem;
   }
-  body.light-mode header .menu-button span {
+  body.light-mode .fixed-bar .menu-button span {
     background-color: #133585;
     width: 30px;
     height: 2px;
   }
-  body.light-mode header .menu-button .one {
+  body.light-mode .fixed-bar .menu-button .one {
     transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
   }
-  body.light-mode header .menu-button .three {
+  body.light-mode .fixed-bar .menu-button .three {
     transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   body.light-mode .company {
