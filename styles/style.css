@@ -254,7 +254,7 @@ table {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 2.5rem;
     width: 50%;
     cursor: default;
     color: rgb(24, 31, 46);
@@ -267,8 +267,8 @@ table {
   }
   body.light-mode .company .logo-name .sub-titulo {
     display: flex;
-    gap: 1.5rem;
-    font-size: 60px;
+    gap: 1rem;
+    font-size: 55px;
   }
   body.light-mode .item1 {
     background-color: rgba(168, 204, 161, 0.4117647059);
@@ -304,12 +304,10 @@ table {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    font-size: 20px;
   }
   body.light-mode .item1 main p {
     line-height: 25px;
-  }
-  body.light-mode .item1 main p span {
-    font-weight: 600;
   }
   ::-webkit-scrollbar {
     width: 10px;

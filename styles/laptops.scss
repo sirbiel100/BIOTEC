@@ -8,14 +8,14 @@
         scroll-behavior: smooth;
         overflow-x: hidden;
         overflow-y: scroll;
-        height: 100vh;
+        height: auto;
         width: 100vw;
     }
 
     body.light-mode {
         display: grid;
         place-items: center;
-        height: 100vh;
+        height: auto;
         width: 100vw;
         background-image: linear-gradient(to top, $LightBlue, $LightGreen);
         font-size: 14px;
@@ -36,6 +36,7 @@
             box-shadow: 
             0px 0px 20px 5px rgba(0, 0, 0, 0.164),
             0px 0px 10px 0px rgba(0, 0, 0, 0.164);
+            z-index: 10;
 
             &:hover {
                 transition: all .3s ease;
@@ -219,7 +220,7 @@
 
         //Logo and Company
 
-    .company {
+        .company {
         display: flex;
         align-items: center;
         width: 100%;
@@ -260,6 +261,60 @@
                 display: flex;
                 gap: 1.5rem;
                 font-size: 40px;
+            }
+        }
+    }
+
+    //Who we are
+
+    .item1 {
+        background-color: $BGLightGreenRGBA;
+        margin-top: 10rem;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        border-top: 1px solid rgba(0, 0, 0, 0.459);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+        box-shadow: 
+        0px -20px 10px 0px rgba(0, 0, 0, 0.100),
+        0px 20px 10px 0px rgba(0, 0, 0, 0.164)
+        ;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background-color: $BGLightGreen;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            box-shadow: 
+            0px -20px 15px 20px rgba(0, 0, 0, 0.200),
+            0px 0px 20px 5px $LightGreen,
+            0px 20px 15px 20px rgba(0, 0, 0, 0.200)
+        ;
+        }
+        
+
+        header {
+            color: rgb(24, 31, 46);
+            font-family: $HeaderFont;
+            font-weight: 700;
+            font-size: 35px;
+            padding: 1.5rem;
+        }
+
+        main {
+            font-family: $ParagraphFont;
+            font-weight: 400;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            font-size: 15px;
+
+            p{ 
+                line-height: 25px;
             }
         }
     }

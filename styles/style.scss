@@ -251,7 +251,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                gap: 3rem;
+                gap: 2.5rem;
                 width: 50%;
                 cursor: default;
                 color: rgb(24, 31, 46);
@@ -265,8 +265,8 @@
 
                 .sub-titulo {
                     display: flex;
-                    gap: 1.5rem;
-                    font-size: 60px;
+                    gap: 1rem;
+                    font-size: 55px;
                 }
             }
         }
@@ -317,13 +317,10 @@
                 display: flex;
                 flex-direction: column;
                 gap: 1.5rem;
+                font-size: 20px;
 
                 p{ 
                     line-height: 25px;
-
-                    span {
-                        font-weight: 600;
-                    }
                 }
                 
             }
