@@ -177,7 +177,7 @@
     border-radius: 50%;
     border: 0.2px solid #133585;
   }
-  .company {
+  body.light-mode .company {
     display: flex;
     align-items: center;
     width: 100%;
@@ -185,16 +185,16 @@
     margin-top: 8rem;
     padding: 1rem;
   }
-  .company .logo-image {
+  body.light-mode .company .logo-image {
     width: 50%;
     padding: 1rem;
   }
-  .company .logo-image img {
+  body.light-mode .company .logo-image img {
     width: 100%;
     opacity: 0.2;
     display: block;
   }
-  .company .logo-name {
+  body.light-mode .company .logo-name {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,17 +205,17 @@
     color: rgb(24, 31, 46);
     font-family: "Cabin", sans-serif;
   }
-  .company .logo-name span {
+  body.light-mode .company .logo-name span {
     font-weight: 500;
     letter-spacing: 5px;
     font-size: 100px;
   }
-  .company .logo-name .sub-titulo {
+  body.light-mode .company .logo-name .sub-titulo {
     display: flex;
     gap: 1.5rem;
     font-size: 40px;
   }
-  .item1 {
+  body.light-mode .item1 {
     background-color: rgba(168, 204, 161, 0.4117647059);
     margin-top: 10rem;
     width: 100%;
@@ -229,20 +229,20 @@
     box-shadow: 0px -20px 10px 0px rgba(0, 0, 0, 0.1), 0px 20px 10px 0px rgba(0, 0, 0, 0.164);
     transition: all 0.3s ease-in-out;
   }
-  .item1:hover {
+  body.light-mode .item1:hover {
     background-color: #e6fada;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     box-shadow: 0px -20px 15px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px 5px #6bd357, 0px 20px 15px 20px rgba(0, 0, 0, 0.2);
   }
-  .item1 header {
+  body.light-mode .item1 header {
     color: rgb(24, 31, 46);
     font-family: "Cabin", sans-serif;
     font-weight: 700;
     font-size: 35px;
     padding: 1.5rem;
   }
-  .item1 main {
+  body.light-mode .item1 main {
     font-family: "Arimo", sans-serif;
     font-weight: 400;
     padding: 1.5rem;
@@ -251,7 +251,7 @@
     gap: 1.5rem;
     font-size: 15px;
   }
-  .item1 main p {
+  body.light-mode .item1 main p {
     line-height: 25px;
   }
 }/*# sourceMappingURL=laptops.css.map */

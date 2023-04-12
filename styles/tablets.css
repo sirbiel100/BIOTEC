@@ -4,13 +4,13 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: scroll;
-    height: 100vh;
+    height: auto;
     width: 100vw;
   }
   body.light-mode {
     display: grid;
     place-items: center;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     background-image: linear-gradient(to top, #3c6ddd, #6bd357);
     font-size: 16px;
@@ -241,7 +241,7 @@
     align-items: center;
     width: 100%;
     height: auto;
-    margin-top: 2rem;
+    margin-top: 8rem;
   }
   body.light-mode .company .logo-image {
     width: 50%;
@@ -273,5 +273,38 @@
     display: flex;
     gap: 0.8rem;
     font-size: 30px;
+  }
+  body.light-mode .item1 {
+    background-color: #e6fada;
+    margin-top: 15rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: 0px -20px 15px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px 5px #6bd357, 0px 20px 15px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  body.light-mode .item1 header {
+    color: rgb(24, 31, 46);
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    padding: 1.5rem;
+  }
+  body.light-mode .item1 main {
+    font-family: "Arimo", sans-serif;
+    font-weight: 400;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 15px;
+  }
+  body.light-mode .item1 main p {
+    line-height: 25px;
   }
 }/*# sourceMappingURL=tablets.css.map */

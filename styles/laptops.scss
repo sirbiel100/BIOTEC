@@ -216,58 +216,57 @@
                 }
             }
         }
-    }
 
         //Logo and Company
 
         .company {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-top: 8rem;
-        padding: 1rem;
-
-        .logo-image {
-            width: 50%;
-            padding: 1rem;
-
-            img {
-                width: 100%;
-                opacity: .2;
-                display: block;
-            }
-
-        }
-
-        .logo-name {
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            gap: 3rem;
-            width: 50%;
-            cursor: default;
-            color: rgb(24, 31, 46);
-            font-family: $HeaderFont;
-            
-            span {
-                font-weight: 500;
-                letter-spacing: 5px;
-                font-size: 100px; 
+            width: 100%;
+            height: auto;
+            margin-top: 8rem;
+            padding: 1rem;
+    
+            .logo-image {
+                width: 50%;
+                padding: 1rem;
+    
+                img {
+                    width: 100%;
+                    opacity: .2;
+                    display: block;
+                }
+    
             }
-
-            .sub-titulo {
+    
+            .logo-name {
                 display: flex;
-                gap: 1.5rem;
-                font-size: 40px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 3rem;
+                width: 50%;
+                cursor: default;
+                color: rgb(24, 31, 46);
+                font-family: $HeaderFont;
+                
+                span {
+                    font-weight: 500;
+                    letter-spacing: 5px;
+                    font-size: 100px; 
+                }
+    
+                .sub-titulo {
+                    display: flex;
+                    gap: 1.5rem;
+                    font-size: 40px;
+                }
             }
         }
-    }
 
-    //Who we are
+            //Who we are
 
-    .item1 {
+        .item1 {
         background-color: $BGLightGreenRGBA;
         margin-top: 10rem;
         width: 100%;
@@ -317,5 +316,7 @@
                 line-height: 25px;
             }
         }
+        }
+
     }
 }

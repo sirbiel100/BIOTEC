@@ -4,13 +4,13 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: scroll;
-    height: 100vh;
+    height: auto;
     width: 100vw;
   }
   body.light-mode {
     display: grid;
     place-items: center;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     background-image: linear-gradient(to top, #3c6ddd, #6bd357);
     font-size: 14px;
@@ -237,19 +237,20 @@
   }
   body.light-mode .company {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
     align-items: center;
     width: 100%;
     height: auto;
-    margin-top: 0.5rem;
-    padding: 1rem;
+    margin-top: 10rem;
+    padding: 2rem;
   }
   body.light-mode .company .logo-image {
     width: 80%;
     height: auto;
-    margin-top: 1rem;
+    padding-right: 2.5rem;
   }
   body.light-mode .company .logo-image img {
+    margin-left: 0.5rem;
     width: 100%;
     opacity: 0.2;
     display: block;
@@ -266,13 +267,47 @@
     font-family: "Cabin", sans-serif;
   }
   body.light-mode .company .logo-name span {
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 2px;
-    font-size: 40px;
+    font-size: 30px;
   }
   body.light-mode .company .logo-name .sub-titulo {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.3rem;
     font-size: 20px;
+  }
+  body.light-mode .item1 {
+    background-color: #e6fada;
+    margin-top: 10rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: 0px -20px 15px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px 5px #6bd357, 0px 20px 15px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  body.light-mode .item1 header {
+    color: rgb(24, 31, 46);
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 1rem;
+  }
+  body.light-mode .item1 main {
+    font-family: "Arimo", sans-serif;
+    font-weight: 400;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 14px;
+  }
+  body.light-mode .item1 main p {
+    line-height: 22px;
   }
 }/*# sourceMappingURL=phone.css.map */
