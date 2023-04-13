@@ -310,6 +310,42 @@ table {
   body.light-mode .item1 main p {
     line-height: 25px;
   }
+  body.light-mode .item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20rem;
+    width: 100%;
+    height: auto;
+    gap: 4rem;
+    background-color: rgba(168, 204, 161, 0.4117647059);
+    border-top: 1px solid rgba(0, 0, 0, 0.459);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+    box-shadow: 0px -20px 10px 0px rgba(0, 0, 0, 0.1), 0px 20px 10px 0px rgba(0, 0, 0, 0.164);
+    transition: all 0.3s ease-in-out;
+  }
+  body.light-mode .item2:hover {
+    background-color: #e6fada;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: 0px -20px 15px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px 5px #6bd357, 0px 20px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  body.light-mode .item2 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: "Cabin", sans-serif;
+    font-size: 40px;
+    color: rgb(24, 31, 46);
+  }
+  body.light-mode .item2 main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: greenyellow;
+  }
   ::-webkit-scrollbar {
     width: 10px;
   }
