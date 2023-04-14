@@ -318,17 +318,6 @@ table {
     width: 100%;
     height: auto;
     gap: 4rem;
-    background-color: rgba(168, 204, 161, 0.4117647059);
-    border-top: 1px solid rgba(0, 0, 0, 0.459);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.459);
-    box-shadow: 0px -20px 10px 0px rgba(0, 0, 0, 0.1), 0px 20px 10px 0px rgba(0, 0, 0, 0.164);
-    transition: all 0.3s ease-in-out;
-  }
-  body.light-mode .item2:hover {
-    background-color: #e6fada;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    box-shadow: 0px -20px 15px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px 5px #6bd357, 0px 20px 10px 0px rgba(0, 0, 0, 0.2);
   }
   body.light-mode .item2 header {
     display: flex;
@@ -344,7 +333,149 @@ table {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    background-color: greenyellow;
+  }
+  body.light-mode .item2 main .santulla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 77rem);
+    height: 2rem;
+    overflow: hidden;
+    padding: 1rem;
+    background-color: rgba(168, 204, 161, 0.4117647059);
+    border: 1px solid rgba(0, 0, 0, 0.459);
+    box-shadow: 0px -20px 10px 0px rgba(0, 0, 0, 0.1), 0px 20px 10px 0px rgba(0, 0, 0, 0.164);
+    transition: all 0.3s ease-in-out;
+  }
+  body.light-mode .item2 main .santulla:hover {
+    background-color: #e6fada;
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px 5px #6bd357, 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    height: 35rem;
+  }
+  body.light-mode .item2 main .santulla:hover .santulla-image {
+    opacity: 1;
+  }
+  body.light-mode .item2 main .santulla .santulla-image {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+  }
+  body.light-mode .item2 main .santulla .santulla-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+  }
+  body.light-mode .item2 main .santulla .santulla-information h2 {
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+  }
+  body.light-mode .item2 main .santulla .santulla-information h3 {
+    font-family: "Arimo", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 3.5rem;
+  }
+  body.light-mode .item2 main .santulla .santulla-information ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Arimo", sans-serif;
+    list-style: disc;
+    list-style-position: inside;
+    margin-top: 2rem;
+    gap: 1.5rem;
+  }
+  body.light-mode .item2 main .adilson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 77rem);
+    height: 35rem;
+    padding: 1rem;
+  }
+  body.light-mode .item2 main .adilson .adilson-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+  }
+  body.light-mode .item2 main .adilson .adilson-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+  }
+  body.light-mode .item2 main .adilson .adilson-information h2 {
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+  }
+  body.light-mode .item2 main .adilson .adilson-information h3 {
+    font-family: "Arimo", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 3.5rem;
+  }
+  body.light-mode .item2 main .adilson .adilson-information ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Arimo", sans-serif;
+    font-size: 18px;
+    list-style: disc;
+    list-style-position: inside;
+    margin-top: 2rem;
+    gap: 1.5rem;
+  }
+  body.light-mode .item2 main .paulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 77rem);
+    height: 35rem;
+    padding: 1rem;
+  }
+  body.light-mode .item2 main .paulo .paulo-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+  }
+  body.light-mode .item2 main .paulo .paulo-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+  }
+  body.light-mode .item2 main .paulo .paulo-information h2 {
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+  }
+  body.light-mode .item2 main .paulo .paulo-information h3 {
+    font-family: "Arimo", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 3.5rem;
+  }
+  body.light-mode .item2 main .paulo .paulo-information ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Arimo", sans-serif;
+    list-style: disc;
+    list-style-position: inside;
+    margin-top: 2rem;
+    gap: 1.5rem;
   }
   ::-webkit-scrollbar {
     width: 10px;
