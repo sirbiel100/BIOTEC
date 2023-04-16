@@ -282,6 +282,7 @@
             flex-direction: column;
             align-items: center;
             flex-wrap: wrap;
+            cursor: default;
             border-top: 1px solid rgba(0, 0, 0, 0.459);
             border-bottom: 1px solid rgba(0, 0, 0, 0.459);
             box-shadow: 
@@ -339,8 +340,8 @@
             margin-top: 20rem;
             width: 100%;
             height: auto;
-            gap: 4rem;
-
+            gap: 2rem;
+            cursor:default;
 
             
 
@@ -352,6 +353,11 @@
                 font-family: $HeaderFont;
                 font-size: 40px;
                 color: rgb(24, 31, 46);
+
+                h1 {
+                    padding: 2rem;
+                    border-top: 1px solid rgb(0, 0, 0);
+                }
             }
 
             main {
@@ -359,21 +365,23 @@
                 align-items: center;
                 justify-content: space-around;
                 width: 100%;
+                height: 40rem;
+                border-bottom: 1px solid black;
 
-
+                //------------\\
                 .santulla {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    width: calc(100% - 77rem);
-                    height: 2rem;
+                    width: 20%;
+                    height: 6.3rem;
                     overflow: hidden;
                     padding: 1rem;
                     background-color: $BGLightGreenRGBA;
                     border: 1px solid rgba(0, 0, 0, 0.459);;
                     box-shadow: 
-                    0px -20px 10px 0px rgba(0, 0, 0, 0.100),
-                    0px 20px 10px 0px rgba(0, 0, 0, 0.164)
+                    0px 0px 20px 0px rgba(0, 0, 0, 0.100),
+                    0px 0px 10px 10px rgba(0, 0, 0, 0.164)
                     ;
                     transition: all .3s ease-in-out;
 
@@ -385,31 +393,49 @@
                         0px 0px 20px 5px $LightGreen,
                         0px 0px 10px 0px rgba(0, 0, 0, 0.200);
                         height: 35rem;
+
                         .santulla-image {
-                            opacity: 1;
+                            width: 100%;
+                            height: 30%;
+                            position: static;
+                            svg {
+                                transition: filter .5s ease-in-out;
+                                filter: drop-shadow(0px 0px 8px $LightBlue)
+                            }
+                        }
+                        
+                        &:hover h2 {
+                            position: static;
+                            font-size: 28px;
                         }
                     }
 
                     .santulla-image {
-                        transition: all .3s ease-in-out;
-                        opacity: 0;
+                        transition: all .3s cubic-bezier(1, 0, 0, 1);
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        width: 100%;
-                        height: 30%;
+                        width: 100px;
+                        height: 100px;
+                        position: relative;
+                        bottom: .8rem;
+                        
                     }
-
+                    
                     .santulla-information {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         height: 70%;
+                        
 
                         h2 {
+                            transition: all .3s cubic-bezier(1, 0, 0, 1);
                             font-family: $HeaderFont;
                             font-weight: 700;
-                            font-size: 28px;
+                            font-size: 24px;
+                            position: relative;
+                            bottom: .5rem;      
                         }
 
                         h3 {
@@ -431,21 +457,58 @@
                         }
                     }
                 }
-
+                //------------\\
                 .adilson{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    width: calc(100% - 77rem);
-                    height: 35rem;
+                    width: 20%;
+                    height: 6.3rem;
+                    overflow: hidden;
                     padding: 1rem;
+                    background-color: $BGLightGreenRGBA;
+                    border: 1px solid rgba(0, 0, 0, 0.459);;
+                    box-shadow: 
+                    0px 0px 20px 0px rgba(0, 0, 0, 0.100),
+                    0px 0px 10px 10px rgba(0, 0, 0, 0.164)
+                    ;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        background-color: $BGLightGreen;
+                        border: 1px solid black;
+                        box-shadow: 
+                        0px 0px 15px 20px rgba(0, 0, 0, 0.200),
+                        0px 0px 20px 5px $LightGreen,
+                        0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+                        height: 35rem;
+
+                        .adilson-image {
+                            width: 100%;
+                            height: 30%;
+                            position: static;
+                            svg {
+                                transition: filter .5s ease-in-out;
+                                filter: drop-shadow(0px 0px 8px $LightBlue)
+                            }
+
+                        }
+                        
+                        &:hover h2 {
+                            position: static;
+                            font-size: 28px;
+                        }
+                    }    
 
                     .adilson-image {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        width: 100%;
-                        height: 30%;
+                        width: 100px;
+                        height: 100px;
+                        position: relative;
+                        bottom: .8rem;
+                        transition: all .3s cubic-bezier(1, 0, 0, 1);
                     }
 
                     .adilson-information {
@@ -457,7 +520,9 @@
                         h2 {
                             font-family: $HeaderFont;
                             font-weight: 700;
-                            font-size: 28px;
+                            font-size: 24px;
+                            position: relative;
+                            bottom: .5rem; 
                         }
 
                         h3 {
@@ -481,23 +546,57 @@
                     }
 
                 }
-
+                //-------------\\
                 .paulo {
-
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    width: calc(100% - 77rem);
-                    height: 35rem;
+                    width: 20%;
+                    height: 6.3rem;
+                    overflow: hidden;
                     padding: 1rem;
+                    background-color: $BGLightGreenRGBA;
+                    border: 1px solid rgba(0, 0, 0, 0.459);;
+                    box-shadow: 
+                    0px 0px 20px 0px rgba(0, 0, 0, 0.100),
+                    0px 0px 10px 10px rgba(0, 0, 0, 0.164)
+                    ;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        background-color: $BGLightGreen;
+                        border: 1px solid black;
+                        box-shadow: 
+                        0px 0px 15px 20px rgba(0, 0, 0, 0.200),
+                        0px 0px 20px 5px $LightGreen,
+                        0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+                        height: 35rem;
+
+                        .paulo-image {
+                            width: 100%;
+                            height: 30%;
+                            position: static;
+                            svg {
+                                transition: filter .5s ease-in-out;
+                                filter: drop-shadow(0px 0px 8px $LightBlue)
+                            }
+                        }
+                        
+                        &:hover h2 {
+                            position: static;
+                            font-size: 28px;
+                        }
+                    } 
 
                     .paulo-image {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-
-                        width: 100%;
-                        height: 30%;
+                        width: 100px;
+                        height: 100px;
+                        position: relative;
+                        bottom: .8rem;
+                        transition: all .3s cubic-bezier(1, 0, 0, 1);
                     }
 
                     .paulo-information {
@@ -511,6 +610,9 @@
                             font-family: $HeaderFont;
                             font-weight: 700;
                             font-size: 28px;
+                            font-size: 24px;
+                            position: relative;
+                            bottom: .5rem; 
                         }
 
                         h3 {
@@ -532,6 +634,7 @@
                         }
                     }
                 }
+                //-------------\\
             }
         }
 
