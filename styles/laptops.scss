@@ -18,7 +18,7 @@
         height: auto;
         width: 100vw;
         background-image: linear-gradient(to top, $LightBlue, $LightGreen);
-        font-size: 14px;
+        font-size: 16px;
 
         //Header
 
@@ -275,6 +275,7 @@
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
+        padding: 1.5rem;
         border-top: 1px solid rgba(0, 0, 0, 0.459);
         border-bottom: 1px solid rgba(0, 0, 0, 0.459);
         box-shadow: 
@@ -310,7 +311,7 @@
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
-            font-size: 15px;
+            font-size: 16px;
 
             p{ 
                 line-height: 25px;
@@ -318,5 +319,488 @@
         }
         }
 
+            //Technical Team
+
+        .item2 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 20rem;
+                    width: 100%;
+                    height: auto;
+                    gap: 2rem;
+                    cursor:default;
+        
+                    
+        
+                    header {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        color: rgb(24, 31, 46);
+        
+                        h1 {
+                            font-family: $HeaderFont;
+                            font-size: 40px;
+                            padding: 2rem;
+                            border-top: 1px solid rgb(0, 0, 0);
+                        }
+        
+                        .bttn {
+                            position: absolute;
+                            left: 0;
+                            display: flex;
+                            align-items: center;
+                            font-family: $ParagraphFont;
+                            background-color: #ffffff79;
+                            border: .5px solid black;
+                            width: 10px;
+                            height: 10px;
+                            padding: 1rem;
+                            overflow: hidden;
+                            border-top-right-radius: 30px;
+                            border-bottom-right-radius: 30px;
+                            transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+                            &:hover {
+                                width: 250px;
+                                height: 70px;
+                                background-color: #ffffff;
+        
+                                span {
+                                    transform: rotate(360deg);
+                                }
+        
+                                button {
+                                    transition: opacity 400ms ease-in-out;
+                                    opacity: 1;
+                                }
+        
+                                p {
+                                    transition: opacity 400ms ease-in-out;
+                                    opacity: 1;
+                                }
+                            }
+                            
+                            span {
+                                transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+                                transform: rotate(180deg);
+                                font-weight: 600;
+                            }
+        
+                            p {
+                                font-weight: 600;
+                                margin-left: 1rem;
+                                font-size: 20px;
+                                filter: drop-shadow(0px 10px 2px rgba(0, 0, 0, 0.342));
+                                opacity: 0;
+                            }
+        
+                            button {
+                                cursor: pointer;
+                                background-color: #2299fa;
+                                padding: 1rem;
+                                border-radius: 20px;
+                                margin-left: 1rem;
+                                border: 1px solid black;
+                                font-weight: 600;
+                                box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.342);
+                                opacity: 0;
+                                
+                                &:hover {
+                                    background-color: #1c87df;
+                                    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.418);
+                                }
+        
+                                &:active {
+                                    background-color: #1771bb;
+                                    transform: translateY(2px);
+                                }
+                            }
+                        }
+                    }
+        
+                    main {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 100%;
+                        height: 40rem;
+                        border-bottom: 1px solid black;
+        
+                        //------------\\
+                        .adilson{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 20%;
+                            height: 6.3rem;
+                            overflow: hidden;
+                            padding: 1rem;
+                            background-color: $BGLightGreenRGBA;
+                            border: 1px solid rgba(0, 0, 0, 0.459);;
+                            box-shadow: 
+                            0px 0px 20px 0px rgba(0, 0, 0, 0.100),
+                            0px 0px 10px 10px rgba(0, 0, 0, 0.164)
+                            ;
+                            transition: all .3s ease-in-out;
+        
+                            &:hover {
+                                background-color: $BGLightGreen;
+                                border: 1px solid black;
+                                box-shadow: 
+                                0px 0px 15px 20px rgba(0, 0, 0, 0.200),
+                                0px 0px 20px 5px $LightGreen,
+                                0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+                                height: 33rem;
+        
+                                .adilson-image {
+                                    width: 120px;
+                                    height: 120px;
+                                    position: static;
+                                    svg {
+                                        transition: filter .5s ease-in-out;
+                                        filter: drop-shadow(0px 0px 8px $LightBlue)
+                                    }
+        
+                                }
+                                
+                                &:hover h2 {
+                                    position: static;
+                                    font-size: 24px;
+                                    margin-top: .8rem;
+                                }
+                            }    
+        
+                            .adilson-image {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100px;
+                                height: 100px;
+                                position: relative;
+                                bottom: .8rem;
+                                transition: all .3s cubic-bezier(1, 0, 0, 1);
+                            }
+        
+                            .adilson-information {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                height: 70%;
+        
+                                h2 {
+                                    font-family: $HeaderFont;
+                                    font-weight: 700;
+                                    font-size: 24px;
+                                    text-align: center;
+                                    position: relative;
+                                    bottom: .5rem; 
+                                }
+        
+                                h3 {
+                                    font-family: $ParagraphFont;
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    margin-top: 3.5rem;
+                                }
+        
+                                ul {
+                                    display: flex;
+                                    flex-direction: column;
+                                    flex-wrap: wrap;
+                                    font-family: $ParagraphFont;
+                                    font-size: 16px;
+                                    list-style: disc;
+                                    list-style-position: inside;
+                                    margin-top: 2rem;
+                                    gap: 1.5rem;
+                                }
+                            }
+        
+                        }
+        
+                        .adilson-off {
+                            height: 33rem;
+                            background-color: $BGLightGreen;
+                            border: 1px solid black;
+                            box-shadow: 
+                                0px 0px 15px 20px rgba(0, 0, 0, 0.200),
+                                0px 0px 20px 5px $LightGreen,
+                                0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+        
+                            .adilson-image {
+                                width:120px;
+                                height: 120px;
+                                position: static;
+        
+                                    svg {
+                                        filter: drop-shadow(0px 0px 8px $LightBlue)
+                                    }
+                            }
+                            
+                            .adilson-information {
+        
+                                h2 {
+                                    font-family: $HeaderFont;
+                                    font-weight: 700;
+                                    font-size: 24px;
+                                    margin-top: .8rem;
+                                    position: static;  
+                                }
+        
+                            }
+                            
+                        }
+                        //------------\\
+                        .santulla {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 20%;
+                            height: 6.3rem;
+                            overflow: hidden;
+                            padding: 1rem;
+                            background-color: $BGLightGreenRGBA;
+                            border: 1px solid rgba(0, 0, 0, 0.459);;
+                            box-shadow: 
+                            0px 0px 20px 0px rgba(0, 0, 0, 0.100),
+                            0px 0px 10px 10px rgba(0, 0, 0, 0.164)
+                            ;
+                            transition: all .3s ease-in-out;
+        
+                            &:hover {
+                                background-color: $BGLightGreen;
+                                border: 1px solid black;
+                                box-shadow: 
+                                0px 0px 15px 20px rgba(0, 0, 0, 0.200),
+                                0px 0px 20px 5px $LightGreen,
+                                0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+                                height: 33rem;
+        
+                                .santulla-image {
+                                    width: 120px;
+                                    height: 120px;
+                                    position: static;
+                                    svg {
+                                        transition: filter .5s ease-in-out;
+                                        filter: drop-shadow(0px 0px 8px $LightBlue)
+                                    }
+                                }
+                                
+                                &:hover h2 {
+                                    position: static;
+                                    font-size: 24px;
+                                    margin-top: .8rem;
+                                }
+                            }
+        
+                            .santulla-image {
+                                transition: all .3s cubic-bezier(1, 0, 0, 1);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100px;
+                                height: 100px;
+                                position: relative;
+                                bottom: .8rem;
+                                
+                            }
+                            
+                            .santulla-information {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                height: 70%;
+                                
+        
+                                h2 {
+                                    transition: all .3s cubic-bezier(1, 0, 0, 1);
+                                    font-family: $HeaderFont;
+                                    font-weight: 700;
+                                    font-size: 24px;
+                                    position: relative;
+                                    bottom: .5rem;      
+                                }
+        
+                                h3 {
+                                    font-family: $ParagraphFont;
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    margin-top: 3.5rem;
+                                }
+        
+                                ul {
+                                    display: flex;
+                                    flex-direction: column;
+                                    flex-wrap: wrap;
+                                    font-family: $ParagraphFont;
+                                    list-style: disc;
+                                    list-style-position: inside;
+                                    margin-top: 2rem;
+                                    gap: 1.5rem;
+                                }
+                            }
+                        }
+        
+                        .santulla-off {
+                            height: 33rem;
+                            padding: 1rem;
+                            background-color: $BGLightGreen;
+                            border: 1px solid black;
+                            box-shadow: 
+                                0px 0px 15px 20px rgba(0, 0, 0, 0.200),
+                                0px 0px 20px 5px $LightGreen,
+                                0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+        
+                            .santulla-image {
+                                width: 120px;
+                                height: 120px;
+                                position: static;
+        
+                                    svg {
+                                        filter: drop-shadow(0px 0px 8px $LightBlue)
+                                    }
+                            }
+                            
+                            .santulla-information {
+        
+                                h2 {
+                                    font-family: $HeaderFont;
+                                    font-weight: 700;
+                                    font-size: 24px; 
+                                    margin-top: .8rem;
+                                    position: static; 
+                                }
+        
+                            }
+                            
+                        }
+                        //-------------\\
+                        .paulo {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 20%;
+                            height: 6.3rem;
+                            overflow: hidden;
+                            padding: 1rem;
+                            background-color: $BGLightGreenRGBA;
+                            border: 1px solid rgba(0, 0, 0, 0.459);;
+                            box-shadow: 
+                            0px 0px 20px 0px rgba(0, 0, 0, 0.100),
+                            0px 0px 10px 10px rgba(0, 0, 0, 0.164)
+                            ;
+                            transition: all .3s ease-in-out;
+        
+                            &:hover {
+                                background-color: $BGLightGreen;
+                                border: 1px solid black;
+                                box-shadow: 
+                                0px 0px 15px 20px rgba(0, 0, 0, 0.200),
+                                0px 0px 20px 5px $LightGreen,
+                                0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+                                height: 33rem;
+        
+                                .paulo-image {
+                                    width: 120px;
+                                    height: 120px;
+                                    position: static;
+                                    svg {
+                                        transition: filter .5s ease-in-out;
+                                        filter: drop-shadow(0px 0px 8px $LightBlue)
+                                    }
+                                }
+                                
+                                &:hover h2 {
+                                    position: static;
+                                    font-size: 24px;
+                                    margin-top: .8rem;
+                                }
+                            } 
+        
+                            .paulo-image {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100px;
+                                height: 100px;
+                                position: relative;
+                                bottom: .8rem;
+                                transition: all .3s cubic-bezier(1, 0, 0, 1);
+                            }
+        
+                            .paulo-information {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                height: 70%;
+        
+        
+                                h2 {
+                                    font-family: $HeaderFont;
+                                    font-weight: 700;
+                                    font-size: 24px;
+                                    position: relative;
+                                    bottom: .5rem; 
+                                }
+        
+                                h3 {
+                                    font-family: $ParagraphFont;
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    margin-top: 3.5rem;
+                                }
+        
+                                ul {
+                                    display: flex;
+                                    flex-direction: column;
+                                    flex-wrap: wrap;
+                                    font-family: $ParagraphFont;
+                                    list-style: disc;
+                                    list-style-position: inside;
+                                    margin-top: 2rem;
+                                    gap: 1.5rem;
+                                }
+                            }
+                        }
+        
+                        .paulo-off {
+                            height: 33rem;
+                            background-color: $BGLightGreen;
+                            border: 1px solid black;
+                            box-shadow: 
+                                0px 0px 15px 20px rgba(0, 0, 0, 0.200),
+                                0px 0px 20px 5px $LightGreen,
+                                0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+        
+                            .paulo-image {
+                                width: 120px;
+                                height: 120px;
+                                position: static;
+        
+                                    svg {
+                                        filter: drop-shadow(0px 0px 8px $LightBlue)
+                                    }
+                            }
+                            
+                            .paulo-information {
+                                
+                                h2 {
+                                    font-family: $HeaderFont;
+                                    font-weight: 700;
+                                    font-size: 24px;
+                                    margin-top: .8rem;
+                                    position: static;  
+                                }
+        
+                            }
+                            
+                        }
+                        //-------------\\
+                    }
+        }    
     }
 }

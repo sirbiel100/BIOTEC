@@ -13,7 +13,7 @@
     height: auto;
     width: 100vw;
     background-image: linear-gradient(to top, #3c6ddd, #6bd357);
-    font-size: 16px;
+    font-size: 14px;
   }
   body.light-mode .fixed-bar {
     display: flex;
@@ -283,6 +283,7 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    padding: 1rem;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     box-shadow: 0px -20px 15px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px 5px #6bd357, 0px 20px 15px 20px rgba(0, 0, 0, 0.2);
@@ -292,7 +293,7 @@
     color: rgb(24, 31, 46);
     font-family: "Cabin", sans-serif;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 36px;
     padding: 1.5rem;
   }
   body.light-mode .item1 main {
@@ -306,5 +307,199 @@
   }
   body.light-mode .item1 main p {
     line-height: 25px;
+  }
+  body.light-mode .item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20rem;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+    cursor: default;
+  }
+  body.light-mode .item2 header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: rgb(24, 31, 46);
+  }
+  body.light-mode .item2 header h1 {
+    font-family: "Cabin", sans-serif;
+    font-size: 36px;
+    padding: 2rem;
+    border-top: 1px solid rgb(0, 0, 0);
+  }
+  body.light-mode .item2 header .bttn {
+    display: none;
+  }
+  body.light-mode .item2 main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 40rem;
+    border-bottom: 1px solid black;
+  }
+  body.light-mode .item2 main .adilson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    overflow: hidden;
+    padding: 1rem;
+    background-color: #e6fada;
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2), 0px 0px 10px 2px #6bd357, 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    height: 33rem;
+  }
+  body.light-mode .item2 main .adilson .adilson-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+  }
+  body.light-mode .item2 main .adilson .adilson-image svg {
+    transition: filter 0.5s ease-in-out;
+    filter: drop-shadow(0px 0px 4px #3c6ddd);
+  }
+  body.light-mode .item2 main .adilson .adilson-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+  }
+  body.light-mode .item2 main .adilson .adilson-information h2 {
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0.8rem;
+  }
+  body.light-mode .item2 main .adilson .adilson-information h3 {
+    font-family: "Arimo", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 3rem;
+  }
+  body.light-mode .item2 main .adilson .adilson-information ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Arimo", sans-serif;
+    font-size: 14px;
+    list-style: disc;
+    list-style-position: inside;
+    margin-top: 2rem;
+    gap: 1.5rem;
+  }
+  body.light-mode .item2 main .santulla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 33rem;
+    overflow: hidden;
+    padding: 1rem;
+    background-color: #e6fada;
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2), 0px 0px 10px 2px #6bd357, 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  body.light-mode .item2 main .santulla .santulla-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+  }
+  body.light-mode .item2 main .santulla .santulla-image svg {
+    transition: filter 0.5s ease-in-out;
+    filter: drop-shadow(0px 0px 4px #3c6ddd);
+  }
+  body.light-mode .item2 main .santulla .santulla-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+  }
+  body.light-mode .item2 main .santulla .santulla-information h2 {
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0.8rem;
+  }
+  body.light-mode .item2 main .santulla .santulla-information h3 {
+    font-family: "Arimo", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 3.5rem;
+  }
+  body.light-mode .item2 main .santulla .santulla-information ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Arimo", sans-serif;
+    font-size: 14px;
+    list-style: disc;
+    list-style-position: inside;
+    margin-top: 2rem;
+    gap: 1.5rem;
+  }
+  body.light-mode .item2 main .paulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 33rem;
+    overflow: hidden;
+    padding: 1rem;
+    background-color: #e6fada;
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2), 0px 0px 10px 2px #6bd357, 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  body.light-mode .item2 main .paulo .paulo-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+  }
+  body.light-mode .item2 main .paulo .paulo-image svg {
+    transition: filter 0.5s ease-in-out;
+    filter: drop-shadow(0px 0px 4px #3c6ddd);
+  }
+  body.light-mode .item2 main .paulo .paulo-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+  }
+  body.light-mode .item2 main .paulo .paulo-information h2 {
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0.8rem;
+  }
+  body.light-mode .item2 main .paulo .paulo-information h3 {
+    font-family: "Arimo", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 3.5rem;
+  }
+  body.light-mode .item2 main .paulo .paulo-information ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Arimo", sans-serif;
+    font-size: 14px;
+    list-style: disc;
+    list-style-position: inside;
+    margin-top: 2rem;
+    gap: 1.5rem;
   }
 }/*# sourceMappingURL=tablets.css.map */

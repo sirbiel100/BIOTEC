@@ -291,7 +291,7 @@
         
         //Logo and Company
 
-    .company {
+        .company {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -338,25 +338,24 @@
                 font-size: 20px;
             }
         }
-    }
+        }
 
         //Who we are
 
-    .item1 {
+        .item1 {
         background-color: $BGLightGreen;
         margin-top: 10rem;
-        width: 100%;
+        width: 80%;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        border: 1px solid black;
         box-shadow: 
-        0px -20px 15px 20px rgba(0, 0, 0, 0.200),
+        0px 0px 15px 15px rgba(0, 0, 0, 0.200),
         0px 0px 20px 5px $LightGreen,
-        0px 20px 15px 20px rgba(0, 0, 0, 0.200)
+        0px 0px 15px 10px rgba(0, 0, 0, 0.200)
         ;
         transition: all .3s ease-in-out;        
 
@@ -382,7 +381,239 @@
                 line-height: 22px;
             }
         }
-    }
+        }
+
+        //Technical Team
+
+        .item2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10rem;
+            width: 100%;
+            height: auto;
+            gap: 2rem;
+            cursor:default;            
+
+            header {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                color: rgb(24, 31, 46);
+
+                h1 {
+                    font-family: $HeaderFont;
+                    font-size: 34px;
+                    padding: 2rem;
+                    border-top: 1px solid rgb(0, 0, 0);
+                }
+
+                .bttn {display: none;}
+                
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 5rem;
+                width: 100%;
+                height: auto;
+                gap: 2rem;
+                border-bottom: 1px solid black;
+
+                //------------\\
+                .adilson{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 50%;
+                    height: 30rem;
+                    overflow: hidden;
+                    padding: 1rem;
+                    background-color: $BGLightGreen;
+                    border: 1px solid black;
+                    box-shadow: 
+                        0px 0px 15px 10px rgba(0, 0, 0, 0.200),
+                        0px 0px 10px 2px $LightGreen,
+                        0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+                    
+                    
+
+                    .adilson-image {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 80px;
+                        height: 80px;
+                        svg {
+                            filter: drop-shadow(0px 0px 4px $LightBlue)
+                        }
+                    }
+
+                    .adilson-information {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        height: 70%;
+
+                        h2 {
+                            font-family: $HeaderFont;
+                            font-weight: 700;
+                            font-size: 16px;
+                            text-align: center;
+                            margin-top: .8rem;
+                        }
+
+                        h3 {
+                            font-family: $ParagraphFont;
+                            font-weight: 600;
+                            font-size: 14px;
+                            margin-top: 3rem;
+                        }
+
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            font-family: $ParagraphFont;
+                            font-size: 14px;
+                            list-style: disc;
+                            list-style-position: inside;
+                            margin-top: 2rem;
+                            gap: 1.5rem;
+                        }
+                    }
+                }   
+                //------------\\
+                .santulla {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 50%;
+                    height: 30rem;
+                    overflow: hidden;
+                    padding: 1rem;
+                    background-color: $BGLightGreen;
+                    border: 1px solid black;
+                    box-shadow: 
+                        0px 0px 15px 10px rgba(0, 0, 0, 0.200),
+                        0px 0px 10px 2px $LightGreen,
+                        0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+
+                    .santulla-image {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 80px;
+                        height: 80px;
+                        svg {
+                            transition: filter .5s ease-in-out;
+                            filter: drop-shadow(0px 0px 4px $LightBlue)
+                        }
+                    }
+
+                    .santulla-information {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        height: 70%;
+
+                        h2 {
+                            font-family: $HeaderFont;
+                            font-weight: 700;
+                            font-size: 16px;
+                            text-align: center;
+                            margin-top: .8rem;
+                        }
+
+                        h3 {
+                            font-family: $ParagraphFont;
+                            font-weight: 600;
+                            font-size: 14px;
+                            margin-top: 3.5rem;
+                        }
+
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            font-family: $ParagraphFont;
+                            font-size: 14px;
+                            list-style: disc;
+                            list-style-position: inside;
+                            margin-top: 2rem;
+                            gap: 1.5rem;
+                        }
+                    }
+                }
+                //-------------\\
+                .paulo {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 50%;
+                    height: 30rem;
+                    overflow: hidden;
+                    padding: 1rem;
+                    background-color: $BGLightGreen;
+                    border: 1px solid black;
+                    box-shadow: 
+                        0px 0px 15px 10px rgba(0, 0, 0, 0.200),
+                        0px 0px 10px 2px $LightGreen,
+                        0px 0px 10px 0px rgba(0, 0, 0, 0.200);                    
+
+                    .paulo-image {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 80px;
+                        height: 80px;
+                        svg {
+                            transition: filter .5s ease-in-out;
+                            filter: drop-shadow(0px 0px 4px $LightBlue)
+                        }
+                    }
+
+                    .paulo-information {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        height: 70%;
+
+                        h2 {
+                            font-family: $HeaderFont;
+                            font-weight: 700;
+                            font-size: 16px;
+                            text-align: center;
+                            margin-top: .8rem;
+                        }
+
+                        h3 {
+                            font-family: $ParagraphFont;
+                            font-weight: 600;
+                            font-size: 14px;
+                            margin-top: 3.5rem;
+                        }
+
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            font-family: $ParagraphFont;
+                            font-size: 14px;
+                            list-style: disc;
+                            list-style-position: inside;
+                            margin-top: 2rem;
+                            gap: 1.5rem;
+                        }
+                    }
+                }
+                //-------------\\
+            }
+}
     
     }
 }

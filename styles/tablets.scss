@@ -18,11 +18,11 @@
         height: auto;
         width: 100vw;
         background-image: linear-gradient(to top, $LightBlue, $LightGreen);
-        font-size: 16px;
+        font-size: 14px;
 
         //Header
 
-        .fixed-bar {
+    .fixed-bar {
             display: flex;
             align-items: center;
             position: fixed;
@@ -288,7 +288,7 @@
                 }
             }
             
-        }
+    }
 
          //Logo and Company
 
@@ -348,6 +348,7 @@
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
+        padding: 1rem;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
         box-shadow: 
@@ -361,7 +362,7 @@
             color: rgb(24, 31, 46);
             font-family: $HeaderFont;
             font-weight: 700;
-            font-size: 35px;
+            font-size: 36px;
             padding: 1.5rem;
         }
 
@@ -379,6 +380,238 @@
             }
         }
     }
+
+        //Technical Team
+
+        .item2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20rem;
+            width: 100%;
+            height: auto;
+            gap: 2rem;
+            cursor:default;
+
+            
+
+            header {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                color: rgb(24, 31, 46);
+
+                h1 {
+                    font-family: $HeaderFont;
+                    font-size: 36px;
+                    padding: 2rem;
+                    border-top: 1px solid rgb(0, 0, 0);
+                }
+
+                .bttn {display: none;}
+                
+            }
+
+            main {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 40rem;
+                border-bottom: 1px solid black;
+
+                //------------\\
+                .adilson{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 20%;
+                    overflow: hidden;
+                    padding: 1rem;
+                    background-color: $BGLightGreen;
+                    border: 1px solid black;
+                    box-shadow: 
+                        0px 0px 15px 10px rgba(0, 0, 0, 0.200),
+                        0px 0px 10px 2px $LightGreen,
+                        0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+                    height: 33rem;
+                    
+
+                    .adilson-image {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100px;
+                        height: 100px;
+                        svg {
+                            transition: filter .5s ease-in-out;
+                            filter: drop-shadow(0px 0px 4px $LightBlue)
+                        }
+                    }
+
+                    .adilson-information {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        height: 70%;
+
+                        h2 {
+                            font-family: $HeaderFont;
+                            font-weight: 700;
+                            font-size: 18px;
+                            text-align: center;
+                            margin-top: .8rem;
+                        }
+
+                        h3 {
+                            font-family: $ParagraphFont;
+                            font-weight: 600;
+                            font-size: 16px;
+                            margin-top: 3rem;
+                        }
+
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            font-family: $ParagraphFont;
+                            font-size: 14px;
+                            list-style: disc;
+                            list-style-position: inside;
+                            margin-top: 2rem;
+                            gap: 1.5rem;
+                        }
+                    }
+                }   
+                //------------\\
+                .santulla {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 20%;
+                    height: 33rem;
+                    overflow: hidden;
+                    padding: 1rem;
+                    background-color: $BGLightGreen;
+                    border: 1px solid black;
+                    box-shadow: 
+                        0px 0px 15px 10px rgba(0, 0, 0, 0.200),
+                        0px 0px 10px 2px $LightGreen,
+                        0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+
+                    .santulla-image {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100px;
+                        height: 100px;
+                        svg {
+                            transition: filter .5s ease-in-out;
+                            filter: drop-shadow(0px 0px 4px $LightBlue)
+                        }
+                    }
+
+                    .santulla-information {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        height: 70%;
+
+                        h2 {
+                            font-family: $HeaderFont;
+                            font-weight: 700;
+                            font-size: 18px;
+                            text-align: center;
+                            margin-top: .8rem;
+                        }
+
+                        h3 {
+                            font-family: $ParagraphFont;
+                            font-weight: 600;
+                            font-size: 16px;
+                            margin-top: 3.5rem;
+                        }
+
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            font-family: $ParagraphFont;
+                            font-size: 14px;
+                            list-style: disc;
+                            list-style-position: inside;
+                            margin-top: 2rem;
+                            gap: 1.5rem;
+                        }
+                    }
+                }
+                //-------------\\
+                .paulo {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 20%;
+                    height: 33rem;
+                    overflow: hidden;
+                    padding: 1rem;
+                    background-color: $BGLightGreen;
+                    border: 1px solid black;
+                    box-shadow: 
+                        0px 0px 15px 10px rgba(0, 0, 0, 0.200),
+                        0px 0px 10px 2px $LightGreen,
+                        0px 0px 10px 0px rgba(0, 0, 0, 0.200);                    
+
+                    .paulo-image {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100px;
+                        height: 100px;
+                        svg {
+                            transition: filter .5s ease-in-out;
+                            filter: drop-shadow(0px 0px 4px $LightBlue)
+                        }
+                    }
+
+                    .paulo-information {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        height: 70%;
+
+                        h2 {
+                            font-family: $HeaderFont;
+                            font-weight: 700;
+                            font-size: 18px;
+                            text-align: center;
+                            margin-top: .8rem;
+                        }
+
+                        h3 {
+                            font-family: $ParagraphFont;
+                            font-weight: 600;
+                            font-size: 16px;
+                            margin-top: 3.5rem;
+                        }
+
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            font-family: $ParagraphFont;
+                            font-size: 14px;
+                            list-style: disc;
+                            list-style-position: inside;
+                            margin-top: 2rem;
+                            gap: 1.5rem;
+                        }
+                    }
+                }
+                //-------------\\
+            }
+} 
 
     }
     
