@@ -287,8 +287,8 @@
             border-top: 1px solid rgba(0, 0, 0, 0.459);
             border-bottom: 1px solid rgba(0, 0, 0, 0.459);
             box-shadow: 
-            0px -20px 10px 0px rgba(0, 0, 0, 0.100),
-            0px 20px 10px 0px rgba(0, 0, 0, 0.164)
+            0px 0px 10px 10px rgba(0, 0, 0, 0.100),
+            0px 0px 15px 15px rgba(0, 0, 0, 0.164)
             ;
             transition: all .3s ease-in-out;
 
@@ -297,9 +297,9 @@
                 border-top: 1px solid black;
                 border-bottom: 1px solid black;
                 box-shadow: 
-                0px -20px 15px 20px rgba(0, 0, 0, 0.200),
+                0px 0px 15px 20px rgba(0, 0, 0, 0.200),
                 0px 0px 20px 5px $LightGreen,
-                0px 20px 10px 0px rgba(0, 0, 0, 0.200)
+                0px 0px 10px 15px rgba(0, 0, 0, 0.200)
             ;
             }
             
@@ -443,8 +443,6 @@
                 justify-content: space-around;
                 width: 100%;
                 height: 40rem;
-                border-bottom: 1px solid black;
-
                 //------------\\
                 .adilson{
                     display: flex;
@@ -823,33 +821,6 @@
             width: 100%;
             height: auto;
             cursor: default;
-            background-color: rgb(247, 188, 188);
-
-            h1, h2 {
-                font-family: $HeaderFont;
-                font-weight: 700;
-            }
-
-            h2 {
-                font-size: 28px;
-                text-decoration: underline;
-            }
-
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-                row-gap: 2rem;
-                column-gap: 5rem;
-                list-style-type: disc;
-                list-style-position: inside;
-                background-color: red;
-            }
-            
-            li { 
-                font-family: $ParagraphFont;
-            }
-
 
             header {
                 display: flex;
@@ -867,72 +838,151 @@
             main {
                 display: flex;
                 flex-direction: column;
-                gap: 8rem;
+                align-items: center;
+                gap: 7rem;
+                margin-top: 4rem;
+                padding-bottom: 2rem;
                 width: 100%;
                 height: auto;
-                background-color: yellow;
 
                 .qualidade {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    position: relative;
+                    left: 20rem;
+                    width: 30%;
                     padding: 2rem;
                     gap: 3rem;
-                    background-color: greenyellow;
+                    background-color: $BGLightGreenRGBA;
+                    box-shadow: 
+                    0px 0px 20px 0px rgba(0, 0, 0, 0.100),
+                    0px 0px 10px 10px rgba(0, 0, 0, 0.164)
+                    ;
+                    border: .5px solid rgba(0, 0, 0, 0.459);
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        background-color: $BGLightGreen;
+                        border: .5px solid black;
+                        box-shadow: 
+                        0px 0px 15px 20px rgba(0, 0, 0, 0.200),
+                        0px 0px 20px 5px $LightGreen,
+                        0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+                    }
+
                 }
 
                 .sistema {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    justify-content: center;
-                    height: 20rem;
+                    position: relative;
+                    right: 20rem;
+                    width: 30%;
                     padding: 2rem;
                     gap: 3rem;
-                    background-color: pink;
+                    background-color: $BGLightGreenRGBA;
+                    border: .5px solid rgba(0, 0, 0, 0.459);
+                    box-shadow: 
+                    0px 0px 20px 0px rgba(0, 0, 0, 0.100),
+                    0px 0px 10px 10px rgba(0, 0, 0, 0.164)
+                    ;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        background-color: $BGLightGreen;
+                        border: .5px solid black;
+                        box-shadow: 
+                        0px 0px 15px 20px rgba(0, 0, 0, 0.200),
+                        0px 0px 20px 5px $LightGreen,
+                        0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+                    }
                 }
+
+                .projetos {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    left: 20rem;
+                    width: 30%;
+                    padding: 2rem;
+                    gap: 3rem;
+                    background-color: $BGLightGreenRGBA;
+                    border: .5px solid rgba(0, 0, 0, 0.459);
+                    box-shadow: 
+                    0px 0px 20px 0px rgba(0, 0, 0, 0.100),
+                    0px 0px 10px 10px rgba(0, 0, 0, 0.164)
+                    ;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        background-color: $BGLightGreen;
+                        border: .5px solid black;
+                        box-shadow: 
+                        0px 0px 15px 20px rgba(0, 0, 0, 0.200),
+                        0px 0px 20px 5px $LightGreen,
+                        0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+                    }
+                }
+
+                .meio-ambiente {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        position: relative;
+                        right: 20rem;
+                        width: 30%;
+                        padding: 2rem;
+                        gap: 3rem;
+                        background-color: $BGLightGreenRGBA;
+                        border: .5px solid rgba(0, 0, 0, 0.459);
+                        box-shadow: 
+                        0px 0px 20px 0px rgba(0, 0, 0, 0.100),
+                        0px 0px 10px 10px rgba(0, 0, 0, 0.164)
+                        ;
+                        transition: all .3s ease-in-out;
+
+                        &:hover {
+                            background-color: $BGLightGreen;
+                            border: .5px solid black;
+                            box-shadow: 
+                            0px 0px 15px 20px rgba(0, 0, 0, 0.200),
+                            0px 0px 20px 5px $LightGreen,
+                            0px 0px 10px 0px rgba(0, 0, 0, 0.200);
+                        }
+                }
+
+
+            }
+
+            h1, h2 {
+                font-family: $HeaderFont;
+                font-weight: 700;
+            }
+
+            h2 {
+                font-size: 28px;
+                text-decoration: underline;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100%;
+                row-gap: 2rem;
+                list-style-type: disc;
+                list-style-position: inside;
+            }
+            
+            li { 
+                font-family: $ParagraphFont;
             }
         }
 
     }
-    
-
-
-    
-    /*   ::-webkit-scrollbar {
-            width: 10px;
-            
-        }
-    
-        ::-webkit-scrollbar-track {
-            background-color: whitesmoke;
-
-        }
-    
-        ::-webkit-scrollbar-track:hover {
-            background-color: rgb(208, 247, 208);
-        }
-    
-        ::-webkit-scrollbar-thumb {
-            background-color: rgb(189, 189, 189);
-            padding: 1rem;
-            
-        } 
-
-        ::-webkit-scrollbar-thumb:hover {
-            background-color: rgb(81, 168, 89);
-        } 
-
-        ::-webkit-scrollbar-thumb:active {
-            background-color: rgb(38, 82, 43);
-        } 
-
-        ::-webkit-scrollbar-button {
-            background-color: rgb(102, 102, 104);
-            height: 10px;
-            width: 100%;
-        }
-*/
     
 
 }
