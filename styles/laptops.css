@@ -348,7 +348,6 @@
     justify-content: space-around;
     width: 100%;
     height: 40rem;
-    border-bottom: 1px solid black;
   }
   body.light-mode .item2 main .adilson {
     display: flex;
@@ -632,5 +631,133 @@
     font-size: 24px;
     margin-top: 0.8rem;
     position: static;
+  }
+  body.light-mode .item3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20rem;
+    gap: 5rem;
+    width: 100%;
+    height: auto;
+    cursor: default;
+  }
+  body.light-mode .item3 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: rgb(24, 31, 46);
+  }
+  body.light-mode .item3 header h1 {
+    font-size: 40px;
+    border-top: 1px solid black;
+    padding: 2rem;
+  }
+  body.light-mode .item3 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: auto;
+  }
+  body.light-mode .item3 main .qualidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 15rem;
+    width: 30%;
+    padding: 2rem;
+    gap: 3rem;
+    background-color: rgba(168, 204, 161, 0.4117647059);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1), 0px 0px 10px 10px rgba(0, 0, 0, 0.164);
+    border: 0.5px solid rgba(0, 0, 0, 0.459);
+    transition: all 0.3s ease-in-out;
+  }
+  body.light-mode .item3 main .qualidade:hover {
+    background-color: #e6fada;
+    border: 0.5px solid black;
+    box-shadow: 0px 0px 15px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px 5px #6bd357, 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  body.light-mode .item3 main .sistema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 15rem;
+    width: 30%;
+    padding: 2rem;
+    gap: 3rem;
+    background-color: rgba(168, 204, 161, 0.4117647059);
+    border: 0.5px solid rgba(0, 0, 0, 0.459);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1), 0px 0px 10px 10px rgba(0, 0, 0, 0.164);
+    transition: all 0.3s ease-in-out;
+  }
+  body.light-mode .item3 main .sistema:hover {
+    background-color: #e6fada;
+    border: 0.5px solid black;
+    box-shadow: 0px 0px 15px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px 5px #6bd357, 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  body.light-mode .item3 main .projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 15rem;
+    width: 30%;
+    padding: 2rem;
+    gap: 3rem;
+    background-color: rgba(168, 204, 161, 0.4117647059);
+    border: 0.5px solid rgba(0, 0, 0, 0.459);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1), 0px 0px 10px 10px rgba(0, 0, 0, 0.164);
+    transition: all 0.3s ease-in-out;
+  }
+  body.light-mode .item3 main .projetos:hover {
+    background-color: #e6fada;
+    border: 0.5px solid black;
+    box-shadow: 0px 0px 15px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px 5px #6bd357, 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  body.light-mode .item3 main .meio-ambiente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 15rem;
+    width: 30%;
+    padding: 2rem;
+    gap: 3rem;
+    background-color: rgba(168, 204, 161, 0.4117647059);
+    border: 0.5px solid rgba(0, 0, 0, 0.459);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1), 0px 0px 10px 10px rgba(0, 0, 0, 0.164);
+    transition: all 0.3s ease-in-out;
+  }
+  body.light-mode .item3 main .meio-ambiente:hover {
+    background-color: #e6fada;
+    border: 0.5px solid black;
+    box-shadow: 0px 0px 15px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px 5px #6bd357, 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  body.light-mode .item3 h1, body.light-mode .item3 h2 {
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+  }
+  body.light-mode .item3 h2 {
+    font-size: 24px;
+    text-decoration: underline;
+  }
+  body.light-mode .item3 ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 2rem;
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+  body.light-mode .item3 li {
+    font-family: "Arimo", sans-serif;
   }
 }/*# sourceMappingURL=laptops.css.map */

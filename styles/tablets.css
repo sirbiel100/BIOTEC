@@ -340,8 +340,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 40rem;
-    border-bottom: 1px solid black;
+    height: auto;
   }
   body.light-mode .item2 main .adilson {
     display: flex;
@@ -501,5 +500,111 @@
     list-style-position: inside;
     margin-top: 2rem;
     gap: 1.5rem;
+  }
+  body.light-mode .item3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20rem;
+    gap: 5rem;
+    width: 100%;
+    height: auto;
+    cursor: default;
+  }
+  body.light-mode .item3 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: rgb(24, 31, 46);
+  }
+  body.light-mode .item3 header h1 {
+    font-size: 36px;
+    border-top: 1px solid black;
+    padding: 2rem;
+  }
+  body.light-mode .item3 main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: auto;
+  }
+  body.light-mode .item3 main .qualidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 12rem;
+    width: 30%;
+    padding: 2rem;
+    gap: 3rem;
+    background-color: #e6fada;
+    border: 0.5px solid black;
+    box-shadow: 0px 0px 15px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px 5px #6bd357, 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  body.light-mode .item3 main .sistema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 12rem;
+    width: 30%;
+    padding: 2rem;
+    gap: 3rem;
+    background-color: #e6fada;
+    border: 0.5px solid black;
+    box-shadow: 0px 0px 15px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px 5px #6bd357, 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  body.light-mode .item3 main .projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 12rem;
+    width: 30%;
+    padding: 2rem;
+    gap: 3rem;
+    background-color: #e6fada;
+    border: 0.5px solid black;
+    box-shadow: 0px 0px 15px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px 5px #6bd357, 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  body.light-mode .item3 main .meio-ambiente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 12rem;
+    width: 30%;
+    padding: 2rem;
+    gap: 3rem;
+    background-color: #e6fada;
+    border: 0.5px solid black;
+    box-shadow: 0px 0px 15px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px 5px #6bd357, 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  body.light-mode .item3 h1, body.light-mode .item3 h2 {
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+  }
+  body.light-mode .item3 h2 {
+    line-height: 30px;
+    font-size: 24px;
+    text-decoration: underline;
+  }
+  body.light-mode .item3 ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 2rem;
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+  body.light-mode .item3 li {
+    font-family: "Arimo", sans-serif;
   }
 }/*# sourceMappingURL=tablets.css.map */
