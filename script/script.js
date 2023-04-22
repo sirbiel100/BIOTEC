@@ -1,5 +1,7 @@
 AOS.init();
 
+    // Language Settings 
+
 const LanguageMap = {
     'pt-BR': {
         'quem-somos': 'Quem somos',
@@ -150,22 +152,22 @@ LanguageButton.addEventListener('change', event => {
 
 // Menu Hamburguer 
 
-const bttn = document.querySelector('#open-menu')
-const navbar = document.querySelector('#nav')
+const bttn = document.querySelector('#open-menu');
+const navbar = document.querySelector('#nav');
 
 bttn.addEventListener('click', () => {
-    navbar.classList.toggle('navbar-toggle')
+    navbar.classList.toggle('navbar-toggle');
 })
 
 // Animation Cards 
 
 const cardsButton = document.querySelector('#animation-button');
-const santulla = document.querySelector('#santulla')
-const adilson = document.querySelector('#adilson')
-const paulo = document.querySelector('#paulo')
+const santulla = document.querySelector('#santulla');
+const adilson = document.querySelector('#adilson');
+const paulo = document.querySelector('#paulo');
 
 cardsButton.addEventListener('click', () =>  {
-    santulla.classList.toggle('santulla-off')
-    adilson.classList.toggle('adilson-off')
-    paulo.classList.toggle('paulo-off')
+    santulla.classList.toggle('santulla-off');
+    adilson.classList.toggle('adilson-off');
+    paulo.classList.toggle('paulo-off');
 })

@@ -813,4 +813,39 @@ table {
   body.light-mode .item3 li {
     font-family: "Arimo", sans-serif;
   }
+  body.light-mode .item4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+    width: 100%;
+    background-color: red;
+  }
+  body.light-mode .item4 header {
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(24, 31, 46);
+  }
+  body.light-mode .item4 main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: blue;
+  }
+  body.light-mode .item4 .media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: pink;
+  }
+  body.light-mode .item4 img, body.light-mode .item4 svg {
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
