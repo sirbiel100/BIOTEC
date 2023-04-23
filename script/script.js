@@ -171,3 +171,14 @@ cardsButton.addEventListener('click', () =>  {
     adilson.classList.toggle('adilson-off');
     paulo.classList.toggle('paulo-off');
 })
+
+// email copylink
+
+    const copyEmail = document.querySelector('#copyLink')
+
+    copyEmail.addEventListener('click', (copy) => {
+        copy.preventDefault();
+
+    const email = copy.currentTarget.getAttribute('data-email');
+    navigator.clipboard.writeText(email);
+})

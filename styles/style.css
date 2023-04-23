@@ -818,34 +818,116 @@ table {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 1.5rem;
     margin-top: 15rem;
+    border-top: 3px solid black;
     width: 100%;
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.5882352941);
   }
   body.light-mode .item4 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: "Cabin", sans-serif;
     font-weight: 700;
     font-size: 40px;
     color: rgb(24, 31, 46);
   }
+  body.light-mode .item4 header h1 {
+    padding: 1rem;
+    border-bottom: 2px solid black;
+  }
   body.light-mode .item4 main {
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: space-between;
+    margin-top: 2rem;
     width: 100%;
-    background-color: blue;
+    padding: 1rem;
+  }
+  body.light-mode .item4 .copy {
+    padding: 1rem;
   }
   body.light-mode .item4 .media {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    background-color: pink;
+    gap: 5rem;
+    position: relative;
+    right: 2rem;
+    padding: 1rem;
+    width: 30%;
+  }
+  body.light-mode .item4 .media .email {
+    position: relative;
+    transition: all 300ms ease-in-out;
+  }
+  body.light-mode .item4 .media .email:hover {
+    transform: scale(1.5) rotate(360deg);
+  }
+  body.light-mode .item4 .media .email:hover div {
+    opacity: 1;
+  }
+  body.light-mode .item4 .media .email:active {
+    transition: all 0ms ease-in-out !important;
+    transform: scale(1.5) translateY(2px);
+  }
+  body.light-mode .item4 .media .email div {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    filter: blur(8px);
+    z-index: -1;
+    background-color: #6bd357;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+  }
+  body.light-mode .item4 .media .instagram {
+    position: relative;
+    transition: all 300ms ease-in-out;
+  }
+  body.light-mode .item4 .media .instagram:hover {
+    transform: scale(1.5) rotate(360deg);
+  }
+  body.light-mode .item4 .media .instagram:hover div {
+    opacity: 1;
+  }
+  body.light-mode .item4 .media .instagram div {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    filter: blur(8px) opacity(0.7);
+    z-index: -1;
+    background-image: linear-gradient(to top, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040);
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+  }
+  body.light-mode .item4 .media .linkedin {
+    position: relative;
+    transition: all 300ms ease-in-out;
+  }
+  body.light-mode .item4 .media .linkedin:hover {
+    transform: scale(1.5) rotate(360deg);
+  }
+  body.light-mode .item4 .media .linkedin:hover div {
+    opacity: 1;
+  }
+  body.light-mode .item4 .media .linkedin div {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    filter: blur(8px);
+    z-index: -1;
+    background-color: #0077B5;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+  }
+  body.light-mode .item4 .logo {
+    padding: 1rem;
   }
   body.light-mode .item4 img, body.light-mode .item4 svg {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 }/*# sourceMappingURL=style.css.map */
