@@ -637,7 +637,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20rem;
-    gap: 5rem;
+    gap: 8rem;
     width: 100%;
     height: auto;
     cursor: default;
@@ -746,6 +746,7 @@
   }
   body.light-mode .item3 h2 {
     font-size: 24px;
+    line-height: 28px;
     text-decoration: underline;
   }
   body.light-mode .item3 ul {
@@ -759,5 +760,156 @@
   }
   body.light-mode .item3 li {
     font-family: "Arimo", sans-serif;
+  }
+  body.light-mode .item4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+    margin-top: 15rem;
+    border-top: 2px solid black;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5882352941);
+  }
+  body.light-mode .item4 span {
+    position: absolute;
+    opacity: 0;
+  }
+  body.light-mode .item4 .copied {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 150px;
+    z-index: 1;
+    font-family: "Arimo", sans-serif;
+    font-weight: 600;
+    border: 1px solid #257913;
+    border-radius: 15px;
+    background-color: white;
+    transform-origin: bottom;
+    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    pointer-events: none;
+    opacity: 1 !important;
+  }
+  body.light-mode .item4 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(24, 31, 46);
+  }
+  body.light-mode .item4 header h1 {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+  }
+  body.light-mode .item4 main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+  }
+  body.light-mode .item4 .copy {
+    font-family: "Arimo", sans-serif;
+    padding-left: 1rem;
+  }
+  body.light-mode .item4 .media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    position: relative;
+    right: 2.8rem;
+    padding: 1rem;
+    width: 30%;
+  }
+  body.light-mode .item4 .media .email {
+    position: relative;
+    transition: all 300ms ease-in-out;
+  }
+  body.light-mode .item4 .media .email:hover {
+    transform: scale(1.5) rotate(360deg);
+  }
+  body.light-mode .item4 .media .email:hover div {
+    opacity: 1;
+  }
+  body.light-mode .item4 .media .email:active {
+    transition: all 0ms ease-in-out !important;
+    transform: scale(1.5) translateY(2px);
+  }
+  body.light-mode .item4 .media .email div {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    filter: blur(8px);
+    z-index: -1;
+    background-color: #6bd357;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+  }
+  body.light-mode .item4 .media .instagram {
+    position: relative;
+    transition: all 300ms ease-in-out;
+  }
+  body.light-mode .item4 .media .instagram:hover {
+    transform: scale(1.5) rotate(360deg);
+  }
+  body.light-mode .item4 .media .instagram:hover div {
+    opacity: 1;
+  }
+  body.light-mode .item4 .media .instagram:active {
+    transition: all 0ms ease-in-out !important;
+    transform: scale(1.5) translateY(2px);
+  }
+  body.light-mode .item4 .media .instagram div {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    filter: blur(8px) opacity(0.7);
+    z-index: -1;
+    background-image: linear-gradient(to top, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040);
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+  }
+  body.light-mode .item4 .media .linkedin {
+    position: relative;
+    transition: all 300ms ease-in-out;
+  }
+  body.light-mode .item4 .media .linkedin:hover {
+    transform: scale(1.5) rotate(360deg);
+  }
+  body.light-mode .item4 .media .linkedin:hover div {
+    opacity: 1;
+  }
+  body.light-mode .item4 .media .linkedin:active {
+    transition: all 0ms ease-in-out !important;
+    transform: scale(1.5) translateY(2px);
+  }
+  body.light-mode .item4 .media .linkedin div {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    filter: blur(8px);
+    z-index: -1;
+    background-color: #0077B5;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+  }
+  body.light-mode .item4 .logo {
+    padding-right: 1rem;
+  }
+  body.light-mode .item4 img, body.light-mode .item4 svg {
+    display: block;
+    width: 40px;
+    height: 40px;
   }
 }/*# sourceMappingURL=laptops.css.map */

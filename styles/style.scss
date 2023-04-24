@@ -86,7 +86,6 @@
                         &:hover {
                             transition: all .4s ease-in-out;
                             transform: scale(1.1);  
-                            opacity: 1;
                         }
                         
                         &:active {
@@ -298,7 +297,6 @@
                 border-bottom: 1px solid black;
                 box-shadow: 
                 0px 0px 15px 20px rgba(0, 0, 0, 0.200),
-                0px 0px 20px 5px $LightGreen,
                 0px 0px 10px 15px rgba(0, 0, 0, 0.200)
             ;
             }
@@ -817,7 +815,7 @@
             flex-direction: column;
             align-items: center;
             margin-top: 20rem;
-            gap: 5rem;
+            gap: 8rem;
             width: 100%;
             height: auto;
             cursor: default;
@@ -985,15 +983,43 @@
         //Be in touch
 
         .item4 {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             padding-top: 1.5rem;
             margin-top: 15rem;
-            border-top: 3px solid black;
+            border-top: 2px solid black;
             width: 100%;
             background-color: #ffffff96;
+            
+            span {
+                position: absolute;
+                opacity: 0;
+            }
+
+            .copied {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                width: 150px;
+                z-index: 1;
+                font-family: $ParagraphFont;
+                font-weight: 600;
+                border: 1px solid $DarkGreen;
+                border-radius: 15px;
+                background-color: white;
+                transform-origin: bottom;
+                transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+                pointer-events: none;
+                opacity: 1 !important;
+            }
 
             header {
                 display: flex;
@@ -1001,11 +1027,11 @@
                 justify-content: center;
                 font-family: $HeaderFont;
                 font-weight: 700;
-                font-size: 40px;
+                font-size: 30px;
                 color: rgb(24, 31, 46);
                 h1 {
-                padding: 1rem;
-                border-bottom: 2px solid black;
+                    padding-bottom: 1rem;
+                    border-bottom: 2px solid black;
                 }
             }
 
@@ -1013,13 +1039,13 @@
                 display: flex;
                 align-items: center;
                 justify-content:space-between;
-                margin-top: 2rem;
                 width: 100%;
                 padding: 1rem;
             }
             
             .copy {
-                padding: 1rem;
+                font-family: $ParagraphFont;
+                padding-left: 1rem;
             }
 
             .media {
@@ -1028,7 +1054,7 @@
                 justify-content: center;
                 gap: 5rem;
                 position: relative;
-                right: 2rem;
+                right: 2.8rem;
                 padding: 1rem;
                 width: 30%;
 
@@ -1051,8 +1077,8 @@
 
                     div {
                         position: absolute;
-                        height: 60px;
-                        width: 60px;
+                        height: 40px;
+                        width: 40px;
                         filter: blur(8px);
                         z-index: -1;
                         background-color: $LightGreen;
@@ -1060,6 +1086,8 @@
                         transition: all 300ms ease-in-out;
                         
                     }
+
+                    
                 }
 
                 .instagram {
@@ -1075,10 +1103,15 @@
                         }
                     }
 
+                    &:active {
+                        transition: all 0ms ease-in-out !important;
+                        transform: scale(1.5) translateY(2px);
+                    }
+
                     div {
                         position: absolute;
-                        height: 60px;
-                        width: 60px;
+                        height: 40px;
+                        width: 40px;
                         filter: blur(8px) opacity(.7);
                         z-index: -1;
                         background-image: linear-gradient(to top, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040);
@@ -1086,6 +1119,7 @@
                         transition: all 300ms ease-in-out;
                         
                     }
+
                 }
 
                 .linkedin {
@@ -1101,10 +1135,15 @@
                         }
                     }
 
+                    &:active {
+                        transition: all 0ms ease-in-out !important;
+                        transform: scale(1.5) translateY(2px);
+                    }
+
                     div {
                         position: absolute;
-                        height: 60px;
-                        width: 60px;
+                        height: 40px;
+                        width: 40px;
                         filter: blur(8px);
                         z-index: -1;
                         background-color: #0077B5;
@@ -1118,13 +1157,13 @@
             }
 
             .logo {
-                padding: 1rem;
+                padding-right: 1rem;
             }
 
             img, svg {
                 display: block;
-                width: 60px;
-                height: 60px;
+                width:40px;
+                height:40px;
             }
         }
 

@@ -67,6 +67,7 @@ const LanguageMap = {
         'I3-MEI-LI-19':'Tratamento de Água',
         'I3-MEI-LI-20':'Laudos Ambientais (Análise de Ar, Solo e Água)',
         'I3-MEI-LI-21':'Desenvolvimento e Realização de Treinamento para Capacitação',
+        'I4-SPAN':'e-mail copiado!',
     },
     'en': {
         'quem-somos': 'Who we are',
@@ -132,6 +133,7 @@ const LanguageMap = {
         'I3-MEI-LI-19':'Water Treatment',
         'I3-MEI-LI-20':'Environmental Reports (Air, Soil and Water Analysis)',
         'I3-MEI-LI-21':'Development and Realization of Training for Capacity Building',
+        'I4-SPAN':'e-mail copied!',
     }
 };
 
@@ -181,4 +183,10 @@ cardsButton.addEventListener('click', () =>  {
 
     const email = copy.currentTarget.getAttribute('data-email');
     navigator.clipboard.writeText(email);
+
+    const copyMessage = document.querySelector('#copied')
+    copyMessage.classList.add('copied');
+    setTimeout(() => {
+        copyMessage.classList.remove('copied');
+    }, 1500) 
 })
