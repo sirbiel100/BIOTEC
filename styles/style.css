@@ -524,7 +524,7 @@ table {
     position: static;
   }
   body.light-mode .item2 main .santulla:hover .santulla-image svg {
-    transition: filter 0.5s ease-in-out;
+    transition: filter 0.3s ease-in-out;
     filter: drop-shadow(0px 0px 8px #3c6ddd);
   }
   body.light-mode .item2 main .santulla:hover:hover h2 {
@@ -548,7 +548,6 @@ table {
     height: 70%;
   }
   body.light-mode .item2 main .santulla .santulla-information h2 {
-    transition: all 0.3s cubic-bezier(1, 0, 0, 1);
     font-family: "Cabin", sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -962,5 +961,123 @@ table {
     display: block;
     width: 40px;
     height: 40px;
+  }
+  body.dark-mode {
+    background-image: linear-gradient(to top, #133585, #257913);
+  }
+  body.dark-mode .fixed-bar {
+    background-color: rgba(0, 0, 0, 0.644);
+    border-bottom-color: rgba(106, 252, 106, 0.144);
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.4), 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  body.dark-mode .fixed-bar:hover {
+    transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: #000;
+    border-bottom-color: rgb(106, 252, 106);
+    box-shadow: 0px 0px 10px 5px #6bd357, 0px 0px 20px 0px rgba(1, 107, 6, 0.671);
+  }
+  body.dark-mode .fixed-bar .logo {
+    background-image: linear-gradient(to top, #3c6ddd, #6bd357);
+  }
+  body.dark-mode .fixed-bar nav ul li a {
+    color: #6bd357;
+  }
+  body.dark-mode .fixed-bar nav .buttons {
+    color: white;
+  }
+  body.dark-mode .fixed-bar nav .buttons select {
+    color: white;
+  }
+  body.dark-mode .fixed-bar nav .buttons select option {
+    background-color: #000;
+  }
+  body.dark-mode .company .logo-name {
+    color: rgb(213, 204, 253);
+  }
+  body.dark-mode .item1 {
+    background-color: rgba(0, 67, 252, 0.1176470588);
+    color: white;
+  }
+  body.dark-mode .item1:hover {
+    background-color: rgba(1, 40, 146, 0.9529411765);
+  }
+  body.dark-mode .item1 header {
+    color: rgb(213, 204, 253);
+  }
+  body.dark-mode .item2 header {
+    color: rgb(213, 204, 253);
+  }
+  body.dark-mode .item2 header h1 {
+    border-top: 1px solid white;
+  }
+  body.dark-mode .item2 header .bttn {
+    background-color: #000;
+    border: 0.5px solid white;
+  }
+  body.dark-mode .item2 header .bttn:hover {
+    background-color: rgba(0, 0, 0, 0.3843137255);
+  }
+  body.dark-mode .item2 main .adilson {
+    background-color: rgba(0, 67, 252, 0.1176470588);
+    border-color: rgba(233, 233, 255, 0.493);
+    color: white;
+  }
+  body.dark-mode .item2 main .adilson:hover {
+    background-color: rgba(1, 40, 146, 0.9529411765);
+    border: 1px solid #3c6ddd;
+    box-shadow: 0px 0px 20px 5px #3c6ddd, 0px 0px 20px 10px rgba(1, 40, 146, 0.9529411765);
+  }
+  body.dark-mode .item2 main .adilson:hover .adilson-image svg {
+    filter: drop-shadow(0px 0px 8px #6bd357);
+  }
+  body.dark-mode .item2 main .adilson-off {
+    background-color: rgba(1, 40, 146, 0.9529411765);
+    border: 1px solid #3c6ddd;
+    box-shadow: 0px 0px 20px 5px #3c6ddd, 0px 0px 20px 10px rgba(1, 40, 146, 0.9529411765);
+  }
+  body.dark-mode .item2 main .adilson-off .adilson-image svg {
+    filter: drop-shadow(0px 0px 8px #6bd357);
+  }
+  body.dark-mode .item2 main .santulla {
+    background-color: rgba(0, 67, 252, 0.1176470588);
+    border-color: rgba(233, 233, 255, 0.493);
+    color: white;
+  }
+  body.dark-mode .item2 main .santulla:hover {
+    background-color: rgba(1, 40, 146, 0.9529411765);
+    border: 1px solid #3c6ddd;
+    box-shadow: 0px 0px 20px 5px #3c6ddd, 0px 0px 20px 10px rgba(1, 40, 146, 0.9529411765);
+  }
+  body.dark-mode .item2 main .santulla:hover .santulla-image svg {
+    filter: drop-shadow(0px 0px 8px #6bd357);
+  }
+  body.dark-mode .item2 main .santulla-off {
+    background-color: rgba(1, 40, 146, 0.9529411765);
+    border: 1px solid #3c6ddd;
+    box-shadow: 0px 0px 20px 5px #3c6ddd, 0px 0px 20px 10px rgba(1, 40, 146, 0.9529411765);
+  }
+  body.dark-mode .item2 main .santulla-off .santulla-image svg {
+    filter: drop-shadow(0px 0px 8px #6bd357);
+  }
+  body.dark-mode .item2 main .paulo {
+    background-color: rgba(0, 67, 252, 0.1176470588);
+    border-color: rgba(233, 233, 255, 0.493);
+    color: white;
+  }
+  body.dark-mode .item2 main .paulo:hover {
+    background-color: rgba(1, 40, 146, 0.9529411765);
+    border: 1px solid #3c6ddd;
+    box-shadow: 0px 0px 20px 5px #3c6ddd, 0px 0px 20px 10px rgba(1, 40, 146, 0.9529411765);
+  }
+  body.dark-mode .item2 main .paulo:hover .paulo-image svg {
+    filter: drop-shadow(0px 0px 8px #6bd357);
+  }
+  body.dark-mode .item2 main .paulo-off {
+    background-color: rgba(1, 40, 146, 0.9529411765);
+    border: 1px solid #3c6ddd;
+    box-shadow: 0px 0px 20px 5px #3c6ddd, 0px 0px 20px 10px rgba(1, 40, 146, 0.9529411765);
+  }
+  body.dark-mode .item2 main .paulo-off .paulo-image svg {
+    filter: drop-shadow(0px 0px 8px #6bd357);
   }
 }/*# sourceMappingURL=style.css.map */

@@ -593,7 +593,7 @@
                             height: 30%;
                             position: static;
                             svg {
-                                transition: filter .5s ease-in-out;
+                                transition: filter .3s ease-in-out;
                                 filter: drop-shadow(0px 0px 8px $LightBlue)
                             }
                         }
@@ -624,7 +624,6 @@
                         
 
                         h2 {
-                            transition: all .3s cubic-bezier(1, 0, 0, 1);
                             font-family: $HeaderFont;
                             font-weight: 700;
                             font-size: 24px;
@@ -1169,6 +1168,213 @@
 
     }
     
+    body.dark-mode {
+        background-image: linear-gradient(to top, $DarkBlue, $DarkGreen);
+        
+        //Header
 
+        .fixed-bar {
+            background-color: rgba(0, 0, 0, 0.644);
+            border-bottom-color: rgba(106, 252, 106, 0.144);
+            box-shadow: 
+            0px 0px 20px 5px rgba(0, 0, 0, 0.400),
+            0px 0px 10px 0px rgba(0, 0, 0, 0.500);
+
+            &:hover {
+                transition: all .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+                background-color: #000;
+                border-bottom-color: rgb(106, 252, 106);
+                box-shadow: 
+                0px 0px 10px 5px $LightGreen,
+                0px 0px 20px 0px rgba(1, 107, 6, 0.671);
+            }
+
+            .logo {
+                background-image: linear-gradient(to top, $LightBlue, $LightGreen);
+            }
+
+            nav {
+                ul{
+                    li{
+                        a{
+                            color: $LightGreen;
+                        }
+                    }
+                }
+
+                .buttons {
+                    color: white;
+
+                    select {
+                        color: white;
+
+                        option {
+                            background-color: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        //Logo and company 
+
+        .company {
+            .logo-name {
+                color: rgb(213, 204, 253);
+            }
+        }
+
+        //Who we are 
+
+        .item1 {
+            background-color: $BGLightBlueRGBA;
+            color: white;
+
+            &:hover {
+                background-color: $BGLightBlue;
+            }
+            
+            header {
+                color: rgb(213, 204, 253);
+            }
+        }
+
+        //Technical Team 
+
+        .item2 {
+
+            header {
+                color: rgb(213, 204, 253);
+
+                h1 {
+                    border-top: 1px solid white;
+                }
+
+                .bttn {
+                    background-color: #000;
+                    border: .5px solid white;
+
+                    &:hover {
+                        background-color: #00000062;
+                    }
+                }
+            }
+
+            main {
+
+                .adilson {
+                    background-color: $BGLightBlueRGBA;
+                    border-color: rgba(233, 233, 255, 0.493);
+                    color: white;
+
+                    &:hover {
+                        background-color: $BGLightBlue;
+                        border: 1px solid $LightBlue;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+
+                        .adilson-image {
+                            svg {
+                                filter: drop-shadow(0px 0px 8px $LightGreen)
+                            }
+                        }
+                        
+                    }
+
+                    
+                }
+
+                .adilson-off {
+                    background-color: $BGLightBlue;
+                        border: 1px solid $LightBlue;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+
+                    .adilson-image {
+                        svg {
+                            filter: drop-shadow(0px 0px 8px $LightGreen)
+                        }
+                    }
+                }
+                //-----------\\
+                .santulla {
+                    background-color: $BGLightBlueRGBA;
+                    border-color: rgba(233, 233, 255, 0.493);
+                    color: white;
+
+                    &:hover {
+                        background-color: $BGLightBlue;
+                        border: 1px solid $LightBlue;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+
+                        .santulla-image {
+                            svg {
+                                filter: drop-shadow(0px 0px 8px $LightGreen)
+                            }
+                        }
+                        
+                    }
+
+                    
+                }
+
+                .santulla-off {
+                    background-color: $BGLightBlue;
+                        border: 1px solid $LightBlue;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+
+                    .santulla-image {
+                        svg {
+                            filter: drop-shadow(0px 0px 8px $LightGreen)
+                        }
+                    }
+                }
+                //-----------\\
+                .paulo {
+                    background-color: $BGLightBlueRGBA;
+                    border-color: rgba(233, 233, 255, 0.493);
+                    color: white;
+
+                    &:hover {
+                        background-color: $BGLightBlue;
+                        border: 1px solid $LightBlue;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+
+                        .paulo-image {
+                            svg {
+                                filter: drop-shadow(0px 0px 8px $LightGreen)
+                            }
+                        }
+                        
+                    }
+
+                    
+                }
+
+                .paulo-off {
+                    background-color: $BGLightBlue;
+                        border: 1px solid $LightBlue;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+
+                    .paulo-image {
+                        svg {
+                            filter: drop-shadow(0px 0px 8px $LightGreen)
+                        }
+                    }
+                }
+                //-----------\\
+            }
+        }
+    }
 }
 

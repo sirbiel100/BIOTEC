@@ -190,3 +190,12 @@ cardsButton.addEventListener('click', () =>  {
         copyMessage.classList.remove('copied');
     }, 1500) 
 })
+
+// Light Mode | Dark Mode
+
+const body = document.querySelector('body');
+const lightDarkButton = document.querySelector('#darkLightButton');
+
+lightDarkButton.addEventListener('change', darkMode => {
+    body.classList.toggle('dark-mode')
+})
