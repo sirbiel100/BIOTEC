@@ -248,15 +248,24 @@
     padding: 2rem;
   }
   body.light-mode .company .logo-image {
+    position: absolute;
     width: 80%;
     height: auto;
     padding-right: 2.5rem;
   }
   body.light-mode .company .logo-image img {
     margin-left: 0.5rem;
-    width: 100%;
     opacity: 0.2;
     display: block;
+    position: fixed;
+    bottom: 0;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 50%;
+    transform: translate(50%);
+    z-index: -1;
+    background-color: red;
   }
   body.light-mode .company .logo-name {
     display: flex;

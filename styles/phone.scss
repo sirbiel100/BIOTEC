@@ -307,15 +307,24 @@
 
 
         .logo-image {
+            position: absolute;
             width: 80%;
             height: auto;   
             padding-right: 2.5rem;
             
             img {
                 margin-left: .5rem;
-                width: 100%;
                 opacity: .2;
                 display: block;
+                position: fixed;
+                bottom: 0;
+                top: 50%;
+                left: 0;
+                right: 0;
+                width: 50%;
+                transform: translate(50%);
+                z-index: -1;
+                background-color: red;
             }
 
         }
