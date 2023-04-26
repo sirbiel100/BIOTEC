@@ -55,7 +55,6 @@ table {
     overflow-x: hidden;
     overflow-y: scroll;
     height: auto;
-    width: 100vw;
   }
   body.light-mode {
     display: grid;

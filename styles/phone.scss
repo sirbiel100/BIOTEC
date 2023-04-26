@@ -67,6 +67,7 @@
                 width: 50vw;
                 height: 100vh;
                 padding-top: 3rem;
+                padding-right: 3rem;
                 background-color: $WhiteGreen;
                 font-family: $ParagraphFont;
                 font-weight: 600;
@@ -238,7 +239,7 @@
                 justify-content: center;
                 align-items: center;
                 position: absolute;
-                right: 4rem;
+                right: 5rem;
 
             }
             
@@ -743,147 +744,147 @@
 
         //Be in touch
 
-    .item4 {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 1.5rem;
-        margin-top: 15rem;
-        border-top: 2px solid black;
-        width: 100%;
-        background-color: #ffffff96;
-        
-        span {
-            position: absolute;
-            opacity: 0;
-        }
-
-        .copied {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 30px;
-            width: 120px;
-            z-index: 1;
-            font-family: $ParagraphFont;
-            font-weight: 600;
-            border: 1px solid $DarkGreen;
-            border-radius: 15px;
-            background-color: white;
-            transform-origin: bottom;
-            transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-            pointer-events: none;
-            opacity: 1 !important;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: $HeaderFont;
-            font-weight: 700;
-            font-size: 24px;
-            color: rgb(24, 31, 46);
-            h1 {
-                padding-bottom: 1rem;
-                border-bottom: 2px solid black;
-            }
-        }
-
-        main {
-            display: flex;
-            align-items: center;
-            justify-content:space-between;
-            width: 100%;
-            padding: 1rem;
-        }
-        
-        .copy {
-            font-family: $ParagraphFont;
-            font-size: 12px;
-            font-weight: 600;
-            padding-left: .5rem;
-        }
-
-        .media {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 3rem;
+        .item4 {
             position: relative;
-            right: 1.2rem;
-            padding: 1rem;
-            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1.5rem;
+            margin-top: 15rem;
+            border-top: 2px solid black;
+            width: 100%;
+            background-color: #ffffff96;
+            
+            span {
+                position: absolute;
+                opacity: 0;
+            }
 
-            .email {
+            .copied {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 30px;
+                width: 120px;
+                z-index: 1;
+                font-family: $ParagraphFont;
+                font-weight: 600;
+                border: 1px solid $DarkGreen;
+                border-radius: 15px;
+                background-color: white;
+                transform-origin: bottom;
+                transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+                pointer-events: none;
+                opacity: 1 !important;
+            }
+
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: $HeaderFont;
+                font-weight: 700;
+                font-size: 24px;
+                color: rgb(24, 31, 46);
+                h1 {
+                    padding-bottom: 1rem;
+                    border-bottom: 2px solid black;
+                }
+            }
+
+            main {
+                display: flex;
+                align-items: center;
+                justify-content:space-between;
+                width: 100%;
+                padding: 1rem;
+            }
+            
+            .copy {
+                font-family: $ParagraphFont;
+                font-size: 12px;
+                font-weight: 600;
+                padding-left: .5rem;
+            }
+
+            .media {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 3rem;
                 position: relative;
+                right: 1.2rem;
+                padding: 1rem;
+                width: 30%;
 
-                div {
-                    position: absolute;
-                    bottom: 50%;
-                    left: 50%;
-                    transform: translateX(-50%) translateY(50%);
-                    height: 40px;
-                    width: 40px;
-                    border-radius: 10px;
-                    z-index: -1;
-                    background-color: white;   
+                .email {
+                    position: relative;
+
+                    div {
+                        position: absolute;
+                        bottom: 50%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(50%);
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 10px;
+                        z-index: -1;
+                        background-color: white;   
+                    }
+
+                    
                 }
 
+                .instagram {
+                    position: relative;
+
+                    div {
+                        position: absolute;
+                        bottom: 50%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(50%);
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 10px;
+                        z-index: -1;
+                        background-image: linear-gradient(to top, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040);
+                    }
+
+                }
+
+                .linkedin {
+                    position: relative;
+
+                    div {
+                        position: absolute;
+                        bottom: 50%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(50%);
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 10px;
+                        z-index: -1;
+                        background-color: #0077B5; 
+                    }
+                }
                 
             }
 
-            .instagram {
-                position: relative;
-
-                div {
-                    position: absolute;
-                    bottom: 50%;
-                    left: 50%;
-                    transform: translateX(-50%) translateY(50%);
-                    height: 40px;
-                    width: 40px;
-                    border-radius: 10px;
-                    z-index: -1;
-                    background-image: linear-gradient(to top, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040);
-                }
-
+            .logo {
+                padding-right: 2rem;
             }
 
-            .linkedin {
-                position: relative;
-
-                div {
-                    position: absolute;
-                    bottom: 50%;
-                    left: 50%;
-                    transform: translateX(-50%) translateY(50%);
-                    height: 40px;
-                    width: 40px;
-                    border-radius: 10px;
-                    z-index: -1;
-                    background-color: #0077B5; 
-                }
+            img, svg {
+                display: block;
+                width:26px;
+                height:26px;
             }
-            
         }
-
-        .logo {
-            padding-right: 2rem;
-        }
-
-        img, svg {
-            display: block;
-            width:26px;
-            height:26px;
-        }
-    }
     
     }
 
