@@ -725,4 +725,143 @@
     width: 26px;
     height: 26px;
   }
+  body.dark-mode {
+    background-image: linear-gradient(to top, #133585, #257913);
+  }
+  body.dark-mode .fixed-bar {
+    background-color: #000;
+    border-bottom-color: rgb(106, 252, 106);
+    box-shadow: 0px 0px 10px 5px #6bd357, 0px 0px 20px 0px rgba(1, 107, 6, 0.671);
+  }
+  body.dark-mode .fixed-bar .logo {
+    background-image: linear-gradient(to top, #3c6ddd, #6bd357);
+  }
+  body.dark-mode .fixed-bar nav {
+    border-left-color: #6bd357;
+    background-color: rgb(0, 56, 0);
+    box-shadow: -5px 0px 20px 15px rgba(22, 209, 28, 0.322), -20px 0px 30px 1000px rgba(0, 0, 0, 0.568);
+  }
+  body.dark-mode .fixed-bar nav ul li a {
+    color: rgb(208, 208, 252);
+  }
+  body.dark-mode .fixed-bar nav .buttons {
+    color: white;
+  }
+  body.dark-mode .fixed-bar nav .buttons select {
+    color: white;
+  }
+  body.dark-mode .fixed-bar nav .buttons select option {
+    background-color: #000;
+  }
+  body.dark-mode .fixed-bar .menu-button span {
+    background-color: #6bd357;
+  }
+  body.dark-mode .company .logo-name {
+    color: rgb(213, 204, 253);
+  }
+  body.dark-mode .item1 {
+    background-color: rgba(1, 40, 146, 0.9529411765);
+    border: 1px solid white;
+    color: white;
+  }
+  body.dark-mode .item1 header {
+    color: rgb(213, 204, 253);
+  }
+  body.dark-mode .item2 header {
+    color: rgb(213, 204, 253);
+  }
+  body.dark-mode .item2 header h1 {
+    border-top: 1px solid white;
+  }
+  body.dark-mode .item2 header .bttn {
+    background-color: #000;
+    border: 0.5px solid white;
+  }
+  body.dark-mode .item2 header .bttn:hover {
+    background-color: rgba(0, 0, 0, 0.3843137255);
+  }
+  body.dark-mode .item2 main {
+    color: white;
+  }
+  body.dark-mode .item2 main .adilson {
+    background-color: rgba(1, 40, 146, 0.9529411765);
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 5px #3c6ddd, 0px 0px 20px 10px rgba(1, 40, 146, 0.9529411765);
+  }
+  body.dark-mode .item2 main .adilson .adilson-image svg {
+    filter: drop-shadow(0px 0px 8px #6bd357);
+  }
+  body.dark-mode .item2 main .santulla {
+    background-color: rgba(1, 40, 146, 0.9529411765);
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 5px #3c6ddd, 0px 0px 20px 10px rgba(1, 40, 146, 0.9529411765);
+  }
+  body.dark-mode .item2 main .santulla .santulla-image svg {
+    filter: drop-shadow(0px 0px 8px #6bd357);
+  }
+  body.dark-mode .item2 main .paulo {
+    background-color: rgba(1, 40, 146, 0.9529411765);
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 5px #3c6ddd, 0px 0px 20px 10px rgba(1, 40, 146, 0.9529411765);
+  }
+  body.dark-mode .item2 main .paulo .paulo-image svg {
+    filter: drop-shadow(0px 0px 8px #6bd357);
+  }
+  body.dark-mode .item3 header {
+    color: rgb(213, 204, 253);
+  }
+  body.dark-mode .item3 header h1 {
+    border-top-color: white;
+  }
+  body.dark-mode .item3 main .qualidade {
+    background-color: rgba(1, 40, 146, 0.9529411765);
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 5px #3c6ddd, 0px 0px 20px 10px rgba(1, 40, 146, 0.9529411765);
+    color: white;
+  }
+  body.dark-mode .item3 main .sistema {
+    background-color: rgba(1, 40, 146, 0.9529411765);
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 5px #3c6ddd, 0px 0px 20px 10px rgba(1, 40, 146, 0.9529411765);
+    color: white;
+  }
+  body.dark-mode .item3 main .projetos {
+    background-color: rgba(1, 40, 146, 0.9529411765);
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 5px #3c6ddd, 0px 0px 20px 10px rgba(1, 40, 146, 0.9529411765);
+    color: white;
+  }
+  body.dark-mode .item3 main .meio-ambiente {
+    background-color: rgba(1, 40, 146, 0.9529411765);
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 5px #3c6ddd, 0px 0px 20px 10px rgba(1, 40, 146, 0.9529411765);
+    color: white;
+  }
+  body.dark-mode .item4 {
+    background-color: rgba(0, 0, 0, 0.322);
+    border-top-color: white;
+  }
+  body.dark-mode .item4 .copied {
+    background-color: #000;
+    color: white;
+    border-color: #3c6ddd;
+  }
+  body.dark-mode .item4 header {
+    color: rgb(213, 204, 253);
+  }
+  body.dark-mode .item4 header h1 {
+    border-bottom-color: rgba(255, 255, 255, 0.1843137255);
+  }
+  body.dark-mode .item4 .media .email div {
+    background-color: #000;
+  }
+  body.dark-mode .item4 .media .email svg .cls-1 {
+    stroke: #ffffff;
+  }
+  body.dark-mode .item4 .copy {
+    color: white;
+  }
+  body.dark-mode .item4 svg {
+    fill: #ffffff;
+  }
 }/*# sourceMappingURL=phone.css.map */

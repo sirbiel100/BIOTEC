@@ -13,6 +13,8 @@
         width: 100vw;
     }
 
+    //Light Mode
+
     body.light-mode {
         display: grid;
         place-items: center;
@@ -367,7 +369,7 @@
                     display: flex;
                     align-items: center;
                     font-family: $ParagraphFont;
-                    background-color: #ffffff79;
+                    background-color: #fff;
                     border: .5px solid black;
                     width: 10px;
                     height: 10px;
@@ -380,7 +382,7 @@
                     &:hover {
                         width: 250px;
                         height: 70px;
-                        background-color: #ffffff;
+                        background-color: #ffffff4d;
 
                         span {
                             transform: rotate(360deg);
@@ -1168,6 +1170,8 @@
 
     }
     
+    //Dark Mode
+
     body.dark-mode {
         background-image: linear-gradient(to top, $DarkBlue, $DarkGreen);
         
@@ -1228,10 +1232,13 @@
 
         .item1 {
             background-color: $BGLightBlueRGBA;
-            color: white;
+            border-color: rgba(255, 255, 255, 0.450);
+            color: $ParagraphRGBA;
 
             &:hover {
                 background-color: $BGLightBlue;
+                border: 1px solid white;
+                color: white;
             }
             
             header {
@@ -1264,12 +1271,12 @@
 
                 .adilson {
                     background-color: $BGLightBlueRGBA;
-                    border-color: rgba(233, 233, 255, 0.493);
+                    border-color: rgba(255, 255, 255, 0.450);
                     color: white;
 
                     &:hover {
                         background-color: $BGLightBlue;
-                        border: 1px solid $LightBlue;
+                        border: 1px solid white;
                         box-shadow:
                         0px 0px 20px 5px $LightBlue,
                         0px 0px 20px 10px $BGLightBlue;
@@ -1287,7 +1294,7 @@
 
                 .adilson-off {
                     background-color: $BGLightBlue;
-                        border: 1px solid $LightBlue;
+                        border: 1px solid white;
                         box-shadow:
                         0px 0px 20px 5px $LightBlue,
                         0px 0px 20px 10px $BGLightBlue;
@@ -1301,12 +1308,12 @@
                 //-----------\\
                 .santulla {
                     background-color: $BGLightBlueRGBA;
-                    border-color: rgba(233, 233, 255, 0.493);
+                    border-color: rgba(255, 255, 255, 0.450);
                     color: white;
 
                     &:hover {
                         background-color: $BGLightBlue;
-                        border: 1px solid $LightBlue;
+                        border: 1px solid white;
                         box-shadow:
                         0px 0px 20px 5px $LightBlue,
                         0px 0px 20px 10px $BGLightBlue;
@@ -1324,7 +1331,7 @@
 
                 .santulla-off {
                     background-color: $BGLightBlue;
-                        border: 1px solid $LightBlue;
+                        border: 1px solid white;
                         box-shadow:
                         0px 0px 20px 5px $LightBlue,
                         0px 0px 20px 10px $BGLightBlue;
@@ -1338,12 +1345,12 @@
                 //-----------\\
                 .paulo {
                     background-color: $BGLightBlueRGBA;
-                    border-color: rgba(233, 233, 255, 0.493);
+                    border-color: rgba(255, 255, 255, 0.450);
                     color: white;
 
                     &:hover {
                         background-color: $BGLightBlue;
-                        border: 1px solid $LightBlue;
+                        border: 1px solid white;
                         box-shadow:
                         0px 0px 20px 5px $LightBlue,
                         0px 0px 20px 10px $BGLightBlue;
@@ -1361,7 +1368,7 @@
 
                 .paulo-off {
                     background-color: $BGLightBlue;
-                        border: 1px solid $LightBlue;
+                        border: 1px solid white;
                         box-shadow:
                         0px 0px 20px 5px $LightBlue,
                         0px 0px 20px 10px $BGLightBlue;
@@ -1375,6 +1382,118 @@
                 //-----------\\
             }
         }
+
+        //Services 
+
+        .item3 {
+            header {
+                color: $H1Font;
+                h1 {
+                    border-top-color: white;
+                }
+            }
+            
+            main {
+                .qualidade{
+                    background-color: $BGLightBlueRGBA;
+                    border-color: rgba(255, 255, 255, 0.450);
+                    color: $ParagraphRGBA;
+
+                    &:hover {
+                        background-color: $BGLightBlue;
+                        border: 1px solid white;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+                        color: white;
+                    }
+                }
+
+                .sistema{
+                    background-color: $BGLightBlueRGBA;
+                    border-color: rgba(255, 255, 255, 0.450);
+                    color: $ParagraphRGBA;
+
+                    &:hover {
+                        background-color: $BGLightBlue;
+                        border: 1px solid white;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+                        color: white;
+                    }
+                }
+
+                .projetos{
+                    background-color: $BGLightBlueRGBA;
+                    border-color: rgba(255, 255, 255, 0.450);
+                    color: $ParagraphRGBA;
+
+                    &:hover {
+                        background-color: $BGLightBlue;
+                        border: 1px solid white;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+                        color: white;
+                    }
+                }
+
+                .meio-ambiente{
+                    background-color: $BGLightBlueRGBA;
+                    border-color: rgba(255, 255, 255, 0.450);
+                    color: $ParagraphRGBA;
+
+                    &:hover {
+                        background-color: $BGLightBlue;
+                        border: 1px solid white;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        //Be in touch
+
+        .item4 {
+            background-color: rgba(0, 0, 0, 0.322);
+            border-top-color: white;
+
+            .copied {
+                background-color: #000;
+                color: white;
+                border-color: $LightBlue;
+            }
+
+            header {
+                color: $H1Font;
+                h1{
+                border-bottom-color: #ffffff2f;
+                }
+            }
+
+            .media {
+                .email {
+                    svg {
+                        .cls-1 {
+                        stroke: #ffffff;
+                        }
+                    }
+                }
+            }
+
+            .copy {
+                color: white;
+            }
+
+            svg {
+                fill: #ffffff;
+            }
+        }
+
     }
 }
 

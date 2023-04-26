@@ -176,19 +176,19 @@ cardsButton.addEventListener('click', () =>  {
 
 // email copylink
 
-    const copyEmail = document.querySelector('#copyLink')
+const copyEmail = document.querySelector('#copyLink')
 
-    copyEmail.addEventListener('click', (copy) => {
-        copy.preventDefault();
+copyEmail.addEventListener('click', (copy) => {
+    copy.preventDefault();
 
     const email = copy.currentTarget.getAttribute('data-email');
     navigator.clipboard.writeText(email);
 
     const copyMessage = document.querySelector('#copied')
     copyMessage.classList.add('copied');
-    setTimeout(() => {
-        copyMessage.classList.remove('copied');
-    }, 1500) 
+        setTimeout(() => {
+            copyMessage.classList.remove('copied');
+        }, 1500) 
 })
 
 // Light Mode | Dark Mode
@@ -196,6 +196,6 @@ cardsButton.addEventListener('click', () =>  {
 const body = document.querySelector('body');
 const lightDarkButton = document.querySelector('#darkLightButton');
 
-lightDarkButton.addEventListener('change', darkMode => {
+lightDarkButton.addEventListener('change', () => {
     body.classList.toggle('dark-mode')
 })

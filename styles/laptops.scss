@@ -12,6 +12,8 @@
         width: 100vw;
     }
 
+    //Light Mode
+
     body.light-mode {
         display: grid;
         place-items: center;
@@ -354,7 +356,7 @@
                             display: flex;
                             align-items: center;
                             font-family: $ParagraphFont;
-                            background-color: #ffffff79;
+                            background-color: #ffffff;
                             border: .5px solid black;
                             width: 10px;
                             height: 10px;
@@ -367,7 +369,7 @@
                             &:hover {
                                 width: 250px;
                                 height: 70px;
-                                background-color: #ffffff;
+                                background-color: #ffffff4d;
         
                                 span {
                                     transform: rotate(360deg);
@@ -1160,5 +1162,331 @@
                 height:40px;
             }
         }
+    }
+
+    //Dark Mode
+
+    body.dark-mode {
+        background-image: linear-gradient(to top, $DarkBlue, $DarkGreen);
+        
+        //Header
+
+        .fixed-bar {
+            background-color: rgba(0, 0, 0, 0.644);
+            border-bottom-color: rgba(106, 252, 106, 0.144);
+            box-shadow: 
+            0px 0px 20px 5px rgba(0, 0, 0, 0.400),
+            0px 0px 10px 0px rgba(0, 0, 0, 0.500);
+
+            &:hover {
+                transition: all .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+                background-color: #000;
+                border-bottom-color: rgb(106, 252, 106);
+                box-shadow: 
+                0px 0px 10px 5px $LightGreen,
+                0px 0px 20px 0px rgba(1, 107, 6, 0.671);
+            }
+
+            .logo {
+                background-image: linear-gradient(to top, $LightBlue, $LightGreen);
+            }
+
+            nav {
+                ul{
+                    li{
+                        a{
+                            color: $LightGreen;
+                        }
+                    }
+                }
+
+                .buttons {
+                    color: white;
+
+                    select {
+                        color: white;
+
+                        option {
+                            background-color: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        //Logo and company 
+
+        .company {
+            .logo-name {
+                color: rgb(213, 204, 253);
+            }
+        }
+
+        //Who we are 
+
+        .item1 {
+            background-color: $BGLightBlueRGBA;
+            border-color: rgba(255, 255, 255, 0.450);
+            color: $ParagraphRGBA;
+
+            &:hover {
+                background-color: $BGLightBlue;
+                border: 1px solid white;
+                color: white;
+            }
+            
+            header {
+                color: rgb(213, 204, 253);
+            }
+        }
+
+        //Technical Team 
+
+        .item2 {
+
+            header {
+                color: rgb(213, 204, 253);
+
+                h1 {
+                    border-top: 1px solid white;
+                }
+
+                .bttn {
+                    background-color: #000;
+                    border: .5px solid white;
+
+                    &:hover {
+                        background-color: #00000062;
+                    }
+                }
+            }
+
+            main {
+
+                .adilson {
+                    background-color: $BGLightBlueRGBA;
+                    border-color: rgba(255, 255, 255, 0.450);
+                    color: white;
+
+                    &:hover {
+                        background-color: $BGLightBlue;
+                        border: 1px solid white;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+
+                        .adilson-image {
+                            svg {
+                                filter: drop-shadow(0px 0px 8px $LightGreen)
+                            }
+                        }
+                        
+                    }
+
+                    
+                }
+
+                .adilson-off {
+                    background-color: $BGLightBlue;
+                        border: 1px solid white;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+
+                    .adilson-image {
+                        svg {
+                            filter: drop-shadow(0px 0px 8px $LightGreen)
+                        }
+                    }
+                }
+                //-----------\\
+                .santulla {
+                    background-color: $BGLightBlueRGBA;
+                    border-color: rgba(255, 255, 255, 0.450);
+                    color: white;
+
+                    &:hover {
+                        background-color: $BGLightBlue;
+                        border: 1px solid white;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+
+                        .santulla-image {
+                            svg {
+                                filter: drop-shadow(0px 0px 8px $LightGreen)
+                            }
+                        }
+                        
+                    }
+
+                    
+                }
+
+                .santulla-off {
+                    background-color: $BGLightBlue;
+                        border: 1px solid white;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+
+                    .santulla-image {
+                        svg {
+                            filter: drop-shadow(0px 0px 8px $LightGreen)
+                        }
+                    }
+                }
+                //-----------\\
+                .paulo {
+                    background-color: $BGLightBlueRGBA;
+                    border-color: rgba(255, 255, 255, 0.450);
+                    color: white;
+
+                    &:hover {
+                        background-color: $BGLightBlue;
+                        border: 1px solid white;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+
+                        .paulo-image {
+                            svg {
+                                filter: drop-shadow(0px 0px 8px $LightGreen)
+                            }
+                        }
+                        
+                    }
+
+                    
+                }
+
+                .paulo-off {
+                    background-color: $BGLightBlue;
+                        border: 1px solid white;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+
+                    .paulo-image {
+                        svg {
+                            filter: drop-shadow(0px 0px 8px $LightGreen)
+                        }
+                    }
+                }
+                //-----------\\
+            }
+        }
+
+        //Services 
+
+        .item3 {
+            header {
+                color: $H1Font;
+                h1 {
+                    border-top-color: white;
+                }
+            }
+            
+            main {
+                .qualidade{
+                    background-color: $BGLightBlueRGBA;
+                    border-color: rgba(255, 255, 255, 0.450);
+                    color: $ParagraphRGBA;
+
+                    &:hover {
+                        background-color: $BGLightBlue;
+                        border: 1px solid white;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+                        color: white;
+                    }
+                }
+
+                .sistema{
+                    background-color: $BGLightBlueRGBA;
+                    border-color: rgba(255, 255, 255, 0.450);
+                    color: $ParagraphRGBA;
+
+                    &:hover {
+                        background-color: $BGLightBlue;
+                        border: 1px solid white;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+                        color: white;
+                    }
+                }
+
+                .projetos{
+                    background-color: $BGLightBlueRGBA;
+                    border-color: rgba(255, 255, 255, 0.450);
+                    color: $ParagraphRGBA;
+
+                    &:hover {
+                        background-color: $BGLightBlue;
+                        border: 1px solid white;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+                        color: white;
+                    }
+                }
+
+                .meio-ambiente{
+                    background-color: $BGLightBlueRGBA;
+                    border-color: rgba(255, 255, 255, 0.450);
+                    color: $ParagraphRGBA;
+
+                    &:hover {
+                        background-color: $BGLightBlue;
+                        border: 1px solid white;
+                        box-shadow:
+                        0px 0px 20px 5px $LightBlue,
+                        0px 0px 20px 10px $BGLightBlue;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        //Be in touch
+
+        .item4 {
+            background-color: rgba(0, 0, 0, 0.322);
+            border-top-color: white;
+
+            .copied {
+                background-color: #000;
+                color: white;
+                border-color: $LightBlue;
+            }
+
+            header {
+                color: $H1Font;
+                h1{
+                border-bottom-color: #ffffff2f;
+                }
+            }
+
+            .media {
+                .email {
+                    svg {
+                        .cls-1 {
+                        stroke: #ffffff;
+                        }
+                    }
+                }
+            }
+
+            .copy {
+                color: white;
+            }
+
+            svg {
+                fill: #ffffff;
+            }
+        }
+
     }
 }
