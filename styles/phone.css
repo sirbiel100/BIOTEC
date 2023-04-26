@@ -6,6 +6,7 @@
     overflow-y: scroll;
     height: auto;
     width: 100vw;
+    touch-action: cross-slide-y;
   }
   body.light-mode {
     display: grid;
@@ -14,6 +15,7 @@
     width: 100vw;
     background-image: linear-gradient(to top, #3c6ddd, #6bd357);
     font-size: 14px;
+    touch-action: cross-slide-y;
   }
   body.light-mode .fixed-bar {
     display: flex;

@@ -9,6 +9,7 @@
         overflow-y: scroll;
         height: auto;
         width: 100vw;
+        touch-action: cross-slide-y;
     }
 
     //Light Mode
@@ -20,6 +21,7 @@
         width: 100vw;
         background-image: linear-gradient(to top, $LightBlue, $LightGreen);
         font-size: 14px;
+        touch-action: cross-slide-y;
 
         //Header
 
