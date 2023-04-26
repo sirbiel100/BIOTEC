@@ -55,13 +55,13 @@ table {
     overflow-x: hidden;
     overflow-y: scroll;
     height: auto;
-    width: auto;
+    width: 100vw;
   }
   body.light-mode {
     display: grid;
     place-items: center;
     height: auto;
-    width: 100vw;
+    width: auto;
     background-image: linear-gradient(to top, #3c6ddd, #6bd357);
     background-repeat: no-repeat;
     font-size: 18px;
