@@ -228,20 +228,50 @@
 
         .company {
             display: flex;
+            justify-content: center;
             align-items: center;
             width: 100%;
             height: auto;
-            margin-top: 8rem;
+            margin-top: 3rem;
             padding: 1rem;
 
             .logo-image {
                 width: 50%;
-                padding: 1rem;
 
-                img {
+                svg {
                     width: 100%;
-                    opacity: .2;
+                    height: 100%;
                     display: block;
+                    
+                    #earth {
+                        animation: rotation 5s linear 1;
+
+                        @keyframes rotation {
+
+                            0% {
+                                transform: scale(0);
+                            }
+
+                            100% {
+                                transform: scale(1)
+                            }
+                            
+                        }
+
+                    }
+                    #arrow-left, #arrow-right, #arrow-up {
+                        opacity: 0;
+                        animation: arrows 1s linear 1;
+                        animation-delay: 5s;
+
+                        @keyframes arrows {
+                            
+                            100% {
+                                opacity: 1;
+                            }
+                            
+                        }
+                    }
                 }
 
             }

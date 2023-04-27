@@ -232,20 +232,41 @@ table {
   }
   body.light-mode .company {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
-    margin-top: 8rem;
+    margin-top: 3rem;
     padding: 1rem;
   }
   body.light-mode .company .logo-image {
     width: 50%;
-    padding: 1rem;
   }
-  body.light-mode .company .logo-image img {
+  body.light-mode .company .logo-image svg {
     width: 100%;
-    opacity: 0.2;
+    height: 100%;
     display: block;
+  }
+  body.light-mode .company .logo-image svg #earth {
+    animation: rotation 5s linear 1;
+  }
+  @keyframes rotation {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  body.light-mode .company .logo-image svg #arrow-left, body.light-mode .company .logo-image svg #arrow-right, body.light-mode .company .logo-image svg #arrow-up {
+    opacity: 0;
+    animation: arrows 1s linear 1;
+    animation-delay: 5s;
+  }
+  @keyframes arrows {
+    100% {
+      opacity: 1;
+    }
   }
   body.light-mode .company .logo-name {
     display: flex;
