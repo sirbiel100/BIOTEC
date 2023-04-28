@@ -248,22 +248,48 @@
     padding: 2rem;
   }
   body.light-mode .company .logo-image {
-    position: absolute;
-    width: 80%;
-    height: auto;
-    padding-right: 2.5rem;
-  }
-  body.light-mode .company .logo-image img {
-    margin-left: 0.5rem;
-    opacity: 0.1;
-    display: block;
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    opacity: 0.3;
     z-index: -1;
-    background-color: red;
+  }
+  body.light-mode .company .logo-image svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  body.light-mode .company .logo-image svg #earth {
+    transform: scale(0);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  body.light-mode .company .logo-image svg #arrow-left {
+    transform: scale(0);
+    transform-origin: bottom left;
+    opacity: 0;
+    transition: all 2s ease;
+    transition-delay: 1s;
+  }
+  body.light-mode .company .logo-image svg #arrow-right {
+    transform: scale(0);
+    transform-origin: bottom right;
+    opacity: 0;
+    transition: all 2s ease;
+    transition-delay: 1s;
+  }
+  body.light-mode .company .logo-image svg #arrow-up {
+    transform: scale(0);
+    transform-origin: top;
+    opacity: 0;
+    transition: all 2s ease;
+    transition-delay: 1s;
+  }
+  body.light-mode .company .logo-image svg .logo-animation {
+    transform: scale(1) !important;
+    opacity: 1 !important;
   }
   body.light-mode .company .logo-name {
     display: flex;
@@ -671,7 +697,7 @@
   }
   body.light-mode .item4 .copy {
     font-family: "Arimo", sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
     padding-left: 0.5rem;
   }
@@ -728,7 +754,11 @@
     background-color: #0077B5;
   }
   body.light-mode .item4 .logo {
-    padding-right: 2rem;
+    margin-right: 1rem;
+  }
+  body.light-mode .item4 .logo svg {
+    height: 30px;
+    width: 30px;
   }
   body.light-mode .item4 img, body.light-mode .item4 svg {
     display: block;

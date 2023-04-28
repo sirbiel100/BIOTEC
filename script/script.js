@@ -199,3 +199,20 @@ const lightDarkButton = document.querySelector('#darkLightButton');
 lightDarkButton.addEventListener('change', () => {
     body.classList.toggle('dark-mode')
 })
+
+// Logo animation 
+
+
+const earth = document.querySelector('#earth');
+const arrowLeft = document.querySelector('#arrow-left');
+const arrowRight = document.querySelector('#arrow-right');
+const arrowUp = document.querySelector('#arrow-up');
+
+window.addEventListener('load', () => {
+    
+    earth.classList.add('logo-animation')
+    arrowLeft.classList.add('logo-animation')
+    arrowRight.classList.add('logo-animation')
+    arrowUp.classList.add('logo-animation')
+    
+})

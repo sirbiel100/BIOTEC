@@ -307,22 +307,54 @@
 
 
         .logo-image {
-            position: absolute;
-            width: 80%;
-            height: auto;   
-            padding-right: 2.5rem;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 100%;
+            opacity: .3;
+            z-index: -1;
             
-            img {
-                margin-left: .5rem;
-                opacity: .1;
+            svg {
+                width: 100%;
+                height: 100%;
                 display: block;
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                width: 50%;
-                transform: translate(-50%, -50%);
-                z-index: -1;
-                background-color: red;
+
+                #earth{
+                    transform: scale(0);
+                    opacity: 0;
+                    transition: all 2s ease;
+                }
+                #arrow-left {
+                    transform: scale(0);
+                    transform-origin: bottom left;
+                    opacity: 0;
+                    transition: all 2s ease;
+                    transition-delay: 1s;
+                }
+
+                #arrow-right {
+                    transform: scale(0);
+                    transform-origin: bottom right;
+                    opacity: 0;
+                    transition: all 2s ease;
+                    transition-delay: 1s;
+
+                }
+                #arrow-up {
+                    transform: scale(0);
+                    transform-origin: top;
+                    opacity: 0;
+                    transition: all 2s ease;
+                    transition-delay: 1s;
+                }
+
+                
+                
+                .logo-animation {
+                    transform: scale(1) !important;
+                    opacity: 1 !important;
+                }
             }
 
         }
@@ -816,7 +848,7 @@
             
             .copy {
                 font-family: $ParagraphFont;
-                font-size: 12px;
+                font-size: 10px;
                 font-weight: 600;
                 padding-left: .5rem;
             }
@@ -885,8 +917,14 @@
             }
 
             .logo {
-                padding-right: 2rem;
+                margin-right: 1rem;
+
+                svg {
+                    height: 30px;
+                    width: 30px;
+                }
             }
+
 
             img, svg {
                 display: block;

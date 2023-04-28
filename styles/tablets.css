@@ -247,10 +247,40 @@
     width: 50%;
     padding-left: 2rem;
   }
-  body.light-mode .company .logo-image img {
+  body.light-mode .company .logo-image svg {
     width: 100%;
-    opacity: 0.2;
+    height: 100%;
     display: block;
+  }
+  body.light-mode .company .logo-image svg #earth {
+    transform: scale(0);
+    opacity: 0;
+    transition: all 4s ease;
+  }
+  body.light-mode .company .logo-image svg #arrow-left {
+    transform: scale(0);
+    transform-origin: bottom left;
+    opacity: 0;
+    transition: all 4s ease;
+    transition-delay: 2s;
+  }
+  body.light-mode .company .logo-image svg #arrow-right {
+    transform: scale(0);
+    transform-origin: bottom right;
+    opacity: 0;
+    transition: all 4s ease;
+    transition-delay: 2s;
+  }
+  body.light-mode .company .logo-image svg #arrow-up {
+    transform: scale(0);
+    transform-origin: top;
+    opacity: 0;
+    transition: all 4s ease;
+    transition-delay: 2s;
+  }
+  body.light-mode .company .logo-image svg .logo-animation {
+    transform: scale(1) !important;
+    opacity: 1 !important;
   }
   body.light-mode .company .logo-name {
     display: flex;
@@ -673,7 +703,7 @@
     justify-content: center;
     gap: 5rem;
     position: relative;
-    right: 2.3rem;
+    right: 1.7rem;
     padding: 1rem;
     width: 30%;
   }
@@ -720,7 +750,11 @@
     background-color: #0077B5;
   }
   body.light-mode .item4 .logo {
-    padding-right: 1rem;
+    margin-right: 1rem;
+  }
+  body.light-mode .item4 .logo svg {
+    height: 50px;
+    width: 50px;
   }
   body.light-mode .item4 img, body.light-mode .item4 svg {
     display: block;

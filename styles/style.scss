@@ -242,35 +242,41 @@
                     width: 100%;
                     height: 100%;
                     display: block;
-                    
-                    #earth {
-                        animation: rotation 5s linear 1;
 
-                        @keyframes rotation {
+                    #earth{
+                        transform: scale(0);
+                        opacity: 0;
+                        transition: all 4s ease;
+                    }
+                    #arrow-left {
+                        transform: scale(0);
+                        transform-origin: bottom left;
+                        opacity: 0;
+                        transition: all 4s ease;
+                        transition-delay: 2s;
+                    }
 
-                            0% {
-                                transform: scale(0);
-                            }
-
-                            100% {
-                                transform: scale(1)
-                            }
-                            
-                        }
+                    #arrow-right {
+                        transform: scale(0);
+                        transform-origin: bottom right;
+                        opacity: 0;
+                        transition: all 4s ease;
+                        transition-delay: 2s;
 
                     }
-                    #arrow-left, #arrow-right, #arrow-up {
+                    #arrow-up {
+                        transform: scale(0);
+                        transform-origin: top;
                         opacity: 0;
-                        animation: arrows 1s linear 1;
-                        animation-delay: 5s;
+                        transition: all 4s ease;
+                        transition-delay: 2s;
+                    }
 
-                        @keyframes arrows {
-                            
-                            100% {
-                                opacity: 1;
-                            }
-                            
-                        }
+                    
+                    
+                    .logo-animation {
+                        transform: scale(1) !important;
+                        opacity: 1 !important;
                     }
                 }
 
@@ -1084,7 +1090,7 @@
                 justify-content: center;
                 gap: 5rem;
                 position: relative;
-                right: 2.8rem;
+                right: 2rem;
                 padding: 1rem;
                 width: 30%;
 
@@ -1187,10 +1193,15 @@
             }
 
             .logo {
-                padding-right: 1rem;
+                margin-right: 1rem;
+
+                svg {
+                    height: 80px;
+                    width: 80px;
+                }
             }
 
-            img, svg {
+            svg {
                 display: block;
                 width:40px;
                 height:40px;

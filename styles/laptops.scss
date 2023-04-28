@@ -233,10 +233,46 @@
                 width: 50%;
                 padding: 1rem;
     
-                img {
+                svg {
                     width: 100%;
-                    opacity: .2;
+                    height: 100%;
                     display: block;
+
+                    #earth{
+                        transform: scale(0);
+                        opacity: 0;
+                        transition: all 4s ease;
+                    }
+                    #arrow-left {
+                        transform: scale(0);
+                        transform-origin: bottom left;
+                        opacity: 0;
+                        transition: all 4s ease;
+                        transition-delay: 2s;
+                    }
+
+                    #arrow-right {
+                        transform: scale(0);
+                        transform-origin: bottom right;
+                        opacity: 0;
+                        transition: all 4s ease;
+                        transition-delay: 2s;
+
+                    }
+                    #arrow-up {
+                        transform: scale(0);
+                        transform-origin: top;
+                        opacity: 0;
+                        transition: all 4s ease;
+                        transition-delay: 2s;
+                    }
+
+                    
+                    
+                    .logo-animation {
+                        transform: scale(1) !important;
+                        opacity: 1 !important;
+                    }
                 }
     
             }
@@ -1050,7 +1086,7 @@
                 justify-content: center;
                 gap: 5rem;
                 position: relative;
-                right: 2.8rem;
+                right: 2.2rem;
                 padding: 1rem;
                 width: 30%;
 
@@ -1153,8 +1189,14 @@
             }
 
             .logo {
-                padding-right: 1rem;
+                margin-right: 1rem;
+
+                svg {
+                    height: 60px;
+                    width: 60px;
+                }
             }
+
 
             img, svg {
                 display: block;
