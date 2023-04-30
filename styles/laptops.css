@@ -243,7 +243,7 @@
   body.light-mode .company .logo-name .sub-titulo {
     display: flex;
     gap: 1.5rem;
-    font-size: 40px;
+    font-size: 2rem;
   }
   body.light-mode .item1 {
     background-color: rgba(168, 204, 161, 0.4117647059);
@@ -279,6 +279,8 @@
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: justify;
     gap: 1.5rem;
     font-size: 16px;
   }
