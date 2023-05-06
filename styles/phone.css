@@ -2,7 +2,6 @@
 @media (max-width: 767px) {
   html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
     overflow-y: scroll;
     width: 100vw;
     touch-action: pan-y;
@@ -22,7 +21,7 @@
     top: 0;
     left: 0;
     padding: 1rem;
-    width: 88%;
+    width: 100vw;
     height: auto;
     background-color: rgba(255, 255, 255, 0.644);
     border-bottom: 2px solid rgba(0, 0, 0, 0.459);
@@ -70,7 +69,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 70%;
     gap: 2.5rem;
     padding-left: 0.5rem;
   }
@@ -95,6 +94,7 @@
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-around;
+    width: 70%;
     height: 15rem;
     margin-top: 2rem;
   }
@@ -241,7 +241,7 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 70%;
     height: auto;
     margin-top: 10rem;
     padding: 2rem;
@@ -251,7 +251,7 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 85%;
+    width: 70%;
     opacity: 0.3;
     z-index: -1;
   }
@@ -351,7 +351,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 10rem;
-    width: 100%;
+    width: 80%;
     height: auto;
     gap: 2rem;
     cursor: default;
@@ -546,7 +546,7 @@
     align-items: center;
     margin-top: 20rem;
     gap: 5rem;
-    width: 100%;
+    width: 80%;
     height: auto;
     cursor: default;
   }
@@ -648,7 +648,7 @@
     padding-top: 1.5rem;
     margin-top: 15rem;
     border-top: 2px solid black;
-    width: 100%;
+    width: 100vw;
     background-color: rgba(255, 255, 255, 0.5882352941);
   }
   body.light-mode .item4 span {
